@@ -51,7 +51,7 @@ function NavBar() {
               fontWeight: isActive ? "bold" : "",
               alignItems: "center",
               alignContent: "center",
-              color: isActive ? colors.navBlue : colors.navBlue,
+              color: isActive ? colors.lightBlue : colors.lightBlue,
               padding: isActive ? 8 : 8,
               borderBottom: isActive
                 ? `2 solid ${colors.action}`
@@ -71,7 +71,7 @@ function NavBar() {
               fontWeight: isActive ? "bold" : "",
               alignItems: "center",
               alignContent: "center",
-              color: isActive ? colors.navBlue : colors.navBlue,
+              color: isActive ? colors.lightBlue : colors.lightBlue,
               padding: isActive ? 8 : 8,
               backgroundColor: isActive
                 ? colors.darkestBlue

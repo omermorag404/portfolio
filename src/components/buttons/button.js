@@ -4,9 +4,9 @@ import textSize from "../sizes/textSize";
 import colors from "../styles/colors";
 const buttonVariant = {
     primary: {
-        backgroundColor: colors.action,
+        backgroundColor: colors.lightBlue,
         hover: {
-            backgroundColor: colors.darkAction,
+            backgroundColor: colors.blue,
             color: colors.white,
         },
         disabled: {
@@ -18,12 +18,12 @@ const buttonVariant = {
         fontSize: textSize.sm,
     },
     secondary: {
-        backgroundColor: colors.white,
-        color: colors.action,
-        borderColor: colors.action,
+        backgroundColor: colors.midBlue,
+        color: colors.lightBlue,
+        borderColor: colors.lightBlue,
         fontSize: textSize.sm,
         hover: {
-            backgroundColor: colors.action,
+            backgroundColor: colors.lightBlue,
             color: colors.white,
         },
     },
@@ -33,7 +33,7 @@ const buttonVariant = {
             backgroundColor: colors.darkestBlue,
             color: colors.green,
         },
-        color: colors.navBlue,
+        color: colors.lightBlue,
         borderColor: colors.darkestBlue,
         fontSize: textSize.sm,
     },

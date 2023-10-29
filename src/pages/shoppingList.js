@@ -62,7 +62,7 @@ const ShoppingList = (props) => {
           overflowY={"scroll"}
           margin={spacing.lg}
           padding={16}
-          justifyContent={"center"}
+          justifyContent={"flexStart"}
         >
           {[
             ...items.filter((i) => !i.checked),
@@ -79,7 +79,7 @@ const ShoppingList = (props) => {
                     borderColor: "Grey",
                     borderRadius: 16,
                     padding: spacing.m,
-                    backgroundColor: colors.darkestBlue,
+                    backgroundColor: colors.midBlue,
                   }}
                 >
                   <Item

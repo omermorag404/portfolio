@@ -19,7 +19,7 @@ const Form = (props) => {
                         width: 350,
                         padding: 16,
                         color: colors.text,
-                        backgroundColor: colors.darkestBlue,
+                        backgroundColor: colors.midBlue,
                     }, value: name, spellCheck: "true", placeholder: "Write item", onChange: (event) => {
                         setName(event.target.value);
                     } }),

@@ -32,7 +32,7 @@ const Form = (props: any) => {
               width: 350,
               padding: 16,
               color: colors.text,
-              backgroundColor: colors.darkestBlue,
+              backgroundColor: colors.midBlue,
             }}
             value={name}
             spellCheck="true"

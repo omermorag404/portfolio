@@ -14,7 +14,13 @@ body {
 .input {
   color: #ff0000;
 }
+a {
+  color: #73daca;
+}
 
+a:visited {
+  color: #73daca;
+}
 .project {
   padding: 24;
   max-width: 360;

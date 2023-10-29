@@ -7,7 +7,7 @@ export type Title = {
   color?: string;
 };
 export const H1 = styled.h1`
-  color: ${(props: any) => props.color || colors.darkestGrey};
+  color: ${(props: any) => props.color || colors.text};
   text-align: center;
   font-size: ${(props: Title) => props.textSize || textSize.xxl};
   font-weight: 600;
@@ -33,20 +33,20 @@ export const H6 = styled(H1)`
 `;
 export const P = styled.p<Title | HTMLParagraphElement>`
   font-size: ${(props: Title) => props.textSize || textSize.sm};
-  color: ${(props: Title) => props.color || colors.white};
+  color: ${(props: Title) => props.color || colors.text};
   margin: 0;
   font-family: Source Code Pro;
 `;
 export const Pbold = styled(P)`
   font-weight: 600;
-  color: ${(props: any) => props.color || colors.white};
+  color: ${(props: any) => props.color || colors.text};
 `;
 export const Crossed = styled(P)`
   font-weight: 300;
-  color: ${(props: any) => props.color || colors.white};
+  color: ${(props: any) => props.color || colors.text};
   text-decoration: line-through;
 `;
 export const Label = styled(P)`
 font-size=${textSize.xs};
-color:${colors.white}
+color:${colors.text}
 `;

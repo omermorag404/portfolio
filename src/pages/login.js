@@ -76,10 +76,10 @@ export const Login = (props) => {
           flexDirection: "column",
           alignItems: "center",
           gap: spacing.lg,
+          backgroundColor: colors.midBlue,
           width: 450,
-          border: `1 solid ${colors.action}`,
           borderRadius: 16,
-          backgroundColor: colors.white,
+          border: "2 solid red",
           boxShadow: `1px 2px 9px rgba(0, 0, 0, 0.2)`,
           padding: 24,
           marginRight: "auto",
@@ -104,11 +104,11 @@ export const Login = (props) => {
             onChange={formik.handleChange}
             // onBlur={formik.handleBlur}
             value={formik.values.email}
-            style={{ width: 360 }}
+            style={{ width: 360, color: colors.text }}
             color={formik.errors.username ? "error" : "primary"}
           />
           {formik.errors.username ? (
-            <div style={{ color: "red" }}>{formik.errors.username}</div>
+            <div style={{ color: colors.red }}>{formik.errors.username}</div>
           ) : null}
         </section>
         <section
@@ -129,10 +129,10 @@ export const Login = (props) => {
             onChange={formik.handleChange}
             // onBlur={formik.handleBlur}
             value={formik.values.email}
-            style={{ width: 360 }}
+            style={{ width: 360, color: colors.text }}
           />
           {formik.errors.password ? (
-            <div style={{ color: "red" }}>{formik.errors.password}</div>
+            <div style={{ color: colors.red }}>{formik.errors.password}</div>
           ) : null}
         </section>
         <CTA

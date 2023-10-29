@@ -4,7 +4,7 @@ export default {
   darkGrey: "#424242",
   grey: "#BDBDBD",
   lightGrey: "#F5F5F5",
-  blue: "#1A1B25",
+  blueGloat: "#1A1B25",
   white: "#ffffff",
   action: "#0351AB",
   darkAction: "#00397B",
@@ -16,9 +16,11 @@ export default {
 
   text: "#B7C1E9",
   purple: "#B999F5",
+  darkPurple: "#9C7FD1",
   red: "#EB7188",
   green: "#73DACA",
-  navBlue: "#6183BB",
-  darkestBlue: "#16161E",
+  lightBlue: "#6183BB",
+  blue: "#496BA1",
   midBlue: "#191B26",
+  darkestBlue: "#16161D",
 };

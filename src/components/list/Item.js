@@ -15,13 +15,7 @@ export default ({ text, onEditDone, onDelete, isChecked, onToggle, id }) => {
   if (isEdit) {
     return (
       <div style={{ position: "relative" }}>
-        <Flex
-          flexDirection="row"
-          gap={8}
-          position="absolute"
-          top="-6"
-          right="0"
-        >
+        <Flex flexDirection="row" gap={8} position="absolute" top="0" right="0">
           <CTA
             variant="secondary"
             buttonSize="sm"
@@ -80,7 +74,7 @@ export default ({ text, onEditDone, onDelete, isChecked, onToggle, id }) => {
           alignItems="center"
           justifyContent="flexStart"
           flexDirection="row"
-          backgroundColor={colors.darkestBlue}
+          backgroundColor={colors.midtBlue}
           gap={8}
           id={id}
           style={{ position: "reletive" }}
@@ -119,7 +113,7 @@ export default ({ text, onEditDone, onDelete, isChecked, onToggle, id }) => {
         alignItems="center"
         justifyContent="flexStart"
         flexDirection="row"
-        backgroundColor={colors.darkestBlue}
+        backgroundColor={colors.midBlue}
         padding="1.25 0"
         gap={spacing.s}
       >
