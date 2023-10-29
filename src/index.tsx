@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 // createBrowserRouter,
 import "./components/styles/style.css";
 import App from "./App";
@@ -13,7 +13,7 @@ import { Cards } from "./pages/cards";
 import reportWebVitals from "./reportWebVitals";
 import { ShoppingList } from "./pages/shoppingList";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
