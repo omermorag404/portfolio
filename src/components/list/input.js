@@ -4,10 +4,10 @@ import { Flex } from "../styles/flex";
 import { CTA } from "../buttons/button";
 import spacing from "../styles/spacing";
 import colors from "../styles/colors";
-var Form = function (props) {
-    var _a = React.useState(""), name = _a[0], setName = _a[1];
-    var _b = React.useState(""), email = _b[0], setEmail = _b[1];
-    var handleSubmit = function (event) {
+const Form = (props) => {
+    const [name, setName] = React.useState("");
+    const [email, setEmail] = React.useState("");
+    const handleSubmit = (event) => {
         event.preventDefault();
     };
     return (React.createElement("div", null,
@@ -20,14 +20,14 @@ var Form = function (props) {
                         padding: 16,
                         color: colors.text,
                         backgroundColor: colors.darkestBlue,
-                    }, value: name, spellCheck: "true", placeholder: "Write item", onChange: function (event) {
+                    }, value: name, spellCheck: "true", placeholder: "Write item", onChange: (event) => {
                         setName(event.target.value);
                     } }),
                 React.createElement(Flex, { flexDirection: "row-reverse", justifyContent: "flexEnd", gap: 16 },
                     " ",
-                    React.createElement(CTA, { variant: "primary", buttonSize: "lg", type: "submit", disabled: name === "", onClick: function () {
+                    React.createElement(CTA, { variant: "primary", buttonSize: "lg", type: "submit", disabled: name === "", onClick: () => {
                             var _a;
-                            var object = {
+                            const object = {
                                 id: Date.now(),
                                 name: name,
                                 userEmail: email,
@@ -36,7 +36,7 @@ var Form = function (props) {
                             setEmail("");
                             setName("");
                         } }, "Add Item"),
-                    React.createElement(CTA, { variant: "secondary", buttonSize: "lg", onClick: function () {
+                    React.createElement(CTA, { variant: "secondary", buttonSize: "lg", onClick: () => {
                             props.onClear([]);
                         } }, "Clear list"))))));
 };

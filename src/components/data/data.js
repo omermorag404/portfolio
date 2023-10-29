@@ -1,5 +1,5 @@
 import colors from "../styles/colors";
-export var cardsData = [
+export const cardsData = [
     {
         title: "Product Designer",
         label: "Project",
@@ -25,12 +25,12 @@ export var cardsData = [
         cardColor: colors.yellow,
     },
 ];
-export var projectData = [
+export const projectData = [
     {
         icon: "🏪",
         name: "Shopping list",
         date: "April 2023",
-        link: "../list",
+        link: `../list`,
     },
     {
         icon: "🃏",
@@ -51,13 +51,13 @@ export var projectData = [
         link: "../charts",
     },
 ];
-export var userData = [
+export const userData = [
     {
         name: "omerm",
         password: "helloworld",
     },
 ];
-export var chartData = [
+export const chartData = [
     {
         name: "Jan",
         uv: 259,

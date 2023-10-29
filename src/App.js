@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Flex } from "./components/styles/flex";
 import spacing from "./components/styles/spacing";
 import NavBar from "./components/navigation/navbar";
-var App = function () {
+const App = () => {
     return (React.createElement(Flex, { style: {
             alignItems: "center",
             flexDirection: "column",

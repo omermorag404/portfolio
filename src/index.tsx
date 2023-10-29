@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-// createBrowserRouter,
+import { RouterProvider, createMemoryRouter } from "react-router-dom";
+// createMemoryRouter,
 import "./components/styles/style.css";
 import App from "./App";
 import { Home } from "./pages/home";
@@ -13,7 +13,7 @@ import { Cards } from "./pages/cards";
 import reportWebVitals from "./reportWebVitals";
 import { ShoppingList } from "./pages/shoppingList";
 
-const router = createBrowserRouter([
+const router = createMemoryRouter([
   {
     path: "/",
     element: <App />,

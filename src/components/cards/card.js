@@ -16,19 +16,18 @@ import card6 from "../img/card6.jpeg";
 import spacing from "../styles/spacing";
 import { H3, H5, Label, P } from "../styles/typography";
 // Card color
-var cardColor = {
+const cardColor = {
     Project: {
-        borderBottom: "8px solid ".concat(colors.sky),
+        borderBottom: `8px solid ${colors.sky}`,
     },
     Position: {
-        borderBottom: "8px solid ".concat(colors.coral),
+        borderBottom: `8px solid ${colors.coral}`,
     },
 };
 //  Card cover
-var imgs = [card1, card2, card3, card4, card5, card6];
-function Card(_a) {
-    var _b;
-    var cardsData = _a.cardsData;
+const imgs = [card1, card2, card3, card4, card5, card6];
+function Card({ cardsData }) {
+    var _a;
     return (React.createElement("div", { style: {
             backgroundColor: colors.white,
             maxWidth: 360,
@@ -42,7 +41,7 @@ function Card(_a) {
             position: "relative",
         } },
         React.createElement("div", { style: {
-                borderBottom: (_b = cardColor[cardsData.label]) === null || _b === void 0 ? void 0 : _b.borderBottom,
+                borderBottom: (_a = cardColor[cardsData.label]) === null || _a === void 0 ? void 0 : _a.borderBottom,
                 marginRight: "auto",
                 maxWidth: 360,
                 position: "relative",
