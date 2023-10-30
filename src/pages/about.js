@@ -1,6 +1,6 @@
 import React from "react";
 import spacing from "../components/styles/spacing";
-import { H1, P } from "../components/styles/typography";
+import { H1, P, H3 } from "../components/styles/typography";
 import { Flex } from "../components/styles/flex";
 import colors from "../components/styles/colors";
 export const About = () => {
@@ -8,24 +8,25 @@ export const About = () => {
     <div>
       <Flex
         flexDirection="column"
-        width="450px"
+        width="700px"
         gap={spacing.lg}
         justifyContent="flex-start"
         alignItems="flex-start"
+        padding="10px ,40px ,40px ,40px "
       >
         <H1 color={colors.purple}>About this project</H1>
         <P>
-          Working as a Product Designer means working closely with the Front-end
-          team. To improve our workflow, I decided to learn how to code so that
-          I could better understand the way engineers build components, inspect
-          designs, and be receptive to design suggestions.
-          <br />
-          <br />
-          Initially, I started learning to code using different applications
-          such as "Mimo" and "Grasshopper", and then continued with Udemy.
-          However, learning without practical application seemed a bit futile.
-          Therefore, I sought help from the Front-end team in my organization.
-          With the invaluable assistance of{" "}
+          So, being a Product Designer means I'm tight with the Front-end team.
+          To make things smoother, I thought, "Why not learn some code?" You
+          know, get the lowdown on how those engineers whip up components, tweak
+          designs, and drop design wisdom.
+        </P>
+        <H3 style={{ textAlign: "left" }}>Learning the Ropes: Apps to DIY</H3>
+        <P>
+          Projects Started my code journey using "Mimo" and "Grasshopper," then
+          hopped on the Udemy train. But real talk, just learning without doing
+          felt kinda meh. So, I hit up the Front-end squad for help—big shoutout
+          to{" "}
           <a
             style={{ color: colors.green }}
             href="https://www.linkedin.com/in/amit-kastel-3a54b3133/"
@@ -33,37 +34,40 @@ export const About = () => {
           >
             Amit Kastel
           </a>{" "}
-          and the other engineers, I embarked on my own React.js project. I
-          began with a simple shopping list, learning how to create various
-          React components that I could later use in composition.
-          <br />
-          <br />
-          However, my curiosity grew, and I wanted to explore and learn more.
-          Consequently, I started adding more projects and functionality to my
-          React app.
-          <br />
-          <br />
-          I acquired proficiency in using different hooks and styled-components.
-          I also experimented with various React libraries and services, such as
-          Formik, MUI, React Router, and Rechart. Once I built the main app in
-          React.js, I decided to convert some parts of it into TypeScript (which
-          was challenging but undoubtedly beneficial). This project and the
-          knowledge gained from it helped me plan my designs more effectively.
-          <br />
-          <br />
-          I learned how to base my design on existing code and reuse components.
-          Now I understand why there are multiple variants of buttons or even
-          texts.
-          <br />
-          <br />
-          However, the most significant value is that I can now understand
-          engineers better and determine when something is possible or expect a
-          more detailed explanation, rather than accepting statements like "this
-          will be difficult to build" or "that is impossible".
-          <br />
-          <br />
-          From this point forward, all that remains is continuous practice and
-          further learning.
+          and the gang. Launched into my own React.js gig, kicking off with a
+          basic shopping list. Went on to cook up various React components like
+          a coding chef.
+        </P>
+        <H3 style={{ textAlign: "left" }}>
+          Curiosity Strikes: More Projects, More Fun
+        </H3>
+        <P>
+          Curiosity didn't stop there. Kept adding spice to my React app, trying
+          out different hooks and styled-components. Played around with Formik,
+          MUI, React Router, and Rechart. Even took the TypeScript
+          plunge—challenging but totally worth it. Now, I'm a champ at planning
+          designs.
+        </P>
+        <H3 style={{ textAlign: "left" }}>
+          Design Hack: Reusing Components and Getting Creative
+        </H3>
+        <P>
+          Figured out how to build my designs on existing code and reuse
+          components. Suddenly, all those different button versions made sense.{" "}
+        </P>
+        <H3 style={{ textAlign: "left" }}>
+          Cracking the Code Jargon: Speaking Engineer-ish
+        </H3>
+        <P>
+          The real deal? Now I get what engineers are saying. No more nodding
+          along to "this is hard" or "that's impossible." I ask questions,
+          demand the deets.
+        </P>
+        <H3 style={{ textAlign: "left" }}>Next Up: Keep on Keeping</H3>
+        <P>
+          On From here, it's all about practice and learning. The transition
+          from designer to coder was a wild ride. Excited for the challenges and
+          growth ahead. Let's do this!
         </P>
       </Flex>
     </div>
