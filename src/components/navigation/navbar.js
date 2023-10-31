@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { H4 } from "../styles/typography";
 import { Flex } from "../styles/flex";
@@ -7,22 +7,11 @@ import spacing from "../styles/spacing";
 import "../styles/style.css";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import { CTA } from "../buttons/button";
+import { useState } from "react";
 
 function NavBar() {
   return (
-    <Flex
-      className="title"
-      style={{
-        backgroundColor: colors.darkestBlue,
-        justifyContent: "space-between",
-        width: "100%",
-        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.200691",
-        padding: "24px",
-        zIndex: 1,
-        paddingLeft: "40px",
-        alignItems: "center",
-      }}
-    >
+    <div className="navigation" style={{}}>
       <Flex style={{ gap: spacing.m }} alignItems={"center"}>
         <NavLink
           to={`home`}
@@ -102,7 +91,17 @@ function NavBar() {
           </CTA>
         </a>
       </Flex>
-    </Flex>
+
+      <style>
+        {
+          "\
+        .navigation{\
+          color:red;\
+        }\
+      "
+        }
+      </style>
+    </div>
   );
 }
 
