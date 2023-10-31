@@ -1,6 +1,6 @@
 import React from "react";
 import spacing from "../components/styles/spacing";
-import { H1, P, H3 } from "../components/styles/typography";
+import { H1, P, H4 } from "../components/styles/typography";
 import { Flex } from "../components/styles/flex";
 import colors from "../components/styles/colors";
 export const About = () => {
@@ -9,10 +9,13 @@ export const About = () => {
       <Flex
         flexDirection="column"
         width="700px"
+        maxWidth="700px"
+        minWidth="360px"
         gap={spacing.lg}
         justifyContent="flex-start"
         alignItems="flex-start"
         padding="10px ,40px ,40px ,40px "
+        margin="40px"
       >
         <H1 color={colors.purple}>About this project</H1>
         <P>
@@ -21,7 +24,9 @@ export const About = () => {
           know, get the lowdown on how those engineers whip up components, tweak
           designs, and drop design wisdom.
         </P>
-        <H3 style={{ textAlign: "left" }}>Learning the Ropes: Apps to DIY</H3>
+        <H4 style={{ textAlign: "left", color: colors.purple }}>
+          Learning the Ropes: Apps to DIY
+        </H4>
         <P>
           Projects Started my code journey using "Mimo" and "Grasshopper," then
           hopped on the Udemy train. But real talk, just learning without doing
@@ -38,9 +43,9 @@ export const About = () => {
           basic shopping list. Went on to cook up various React components like
           a coding chef.
         </P>
-        <H3 style={{ textAlign: "left" }}>
+        <H4 style={{ textAlign: "left", color: colors.purple }}>
           Curiosity Strikes: More Projects, More Fun
-        </H3>
+        </H4>
         <P>
           Curiosity didn't stop there. Kept adding spice to my React app, trying
           out different hooks and styled-components. Played around with Formik,
@@ -48,22 +53,22 @@ export const About = () => {
           plunge—challenging but totally worth it. Now, I'm a champ at planning
           designs.
         </P>
-        <H3 style={{ textAlign: "left" }}>
+        <H4 style={{ textAlign: "left", color: colors.purple }}>
           Design Hack: Reusing Components and Getting Creative
-        </H3>
+        </H4>
         <P>
           Figured out how to build my designs on existing code and reuse
           components. Suddenly, all those different button versions made sense.{" "}
         </P>
-        <H3 style={{ textAlign: "left" }}>
+        <H4 style={{ textAlign: "left", color: colors.purple }}>
           Cracking the Code Jargon: Speaking Engineer-ish
-        </H3>
+        </H4>
         <P>
           The real deal? Now I get what engineers are saying. No more nodding
           along to "this is hard" or "that's impossible." I ask questions,
           demand the deets.
         </P>
-        <H3 style={{ textAlign: "left" }}>Next Up: Keep on Keeping</H3>
+        <H4 style={{ textAlign: "left" }}>Next Up: Keep on Keeping</H4>
         <P>
           On From here, it's all about practice and learning. The transition
           from designer to coder was a wild ride. Excited for the challenges and

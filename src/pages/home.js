@@ -34,10 +34,9 @@ export const Home = () => {
         alignItems={"center"}
         padding={"40px"}
       >
-        {/* <img src={reactLogo} height={"80px"} width={"100px"} alt="react" /> */}
-        <H5
+        {/* <H5
           style={{
-            fontSize: 64,
+            fontSize: 40,
             fontFamily: "Source Code Pro",
             color: colors.text,
           }}
@@ -50,7 +49,7 @@ export const Home = () => {
               strings: ["I learn React.js", "It's crazy, right?"],
             }}
           />
-        </H5>
+        </H5> */}
       </Flex>
       {showProjects && (
         <animated.div
@@ -58,12 +57,7 @@ export const Home = () => {
             ...springs,
           }}
         >
-          <Flex
-            gap={spacing.lg}
-            flexWrap={"wrap"}
-            justifyContent={"center"}
-            padding={"0px 156px"}
-          >
+          <Flex gap={spacing.lg} flexWrap={"wrap"} justifyContent={"center"}>
             {projectData.map((item, index) => {
               return <ProjectCard projectData={item} />;
             })}

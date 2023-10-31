@@ -9,7 +9,7 @@ const App = () => {
       style={{
         alignItems: "center",
         flexDirection: "column",
-        width: "100%",
+        width: "100vw",
         gap: spacing.xxl,
       }}
     >
