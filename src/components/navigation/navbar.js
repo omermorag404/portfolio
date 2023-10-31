@@ -7,7 +7,6 @@ import spacing from "../styles/spacing";
 import "../styles/style.css";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import { CTA } from "../buttons/button";
-import { useState } from "react";
 
 function NavBar() {
   return (
