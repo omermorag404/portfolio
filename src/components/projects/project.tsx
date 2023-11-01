@@ -10,7 +10,6 @@ import styled from "styled-components";
 const ProjectStyledCard = styled(Flex)`
   flex-wrap: wrap;
   padding: 24px;
-
   min-width: 320px;
   max-with: 50%;
   box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
