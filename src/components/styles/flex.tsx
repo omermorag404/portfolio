@@ -7,6 +7,7 @@ export type FlexProps = {
   gap?: string | number;
   height?: string;
   maxHeight?: string;
+  maxWidth?: string;
   overflowY?: string;
   position?: string;
   top?: string;
@@ -51,6 +52,7 @@ export const Flex = ({
   flexPack,
   width,
   flexSrink,
+  maxWidth,
   // className,
 
   ...rest
@@ -80,6 +82,7 @@ export const Flex = ({
       flexWrap,
       width,
       flexSrink,
+      maxWidth,
       // className,
 
       ...rest.style,

@@ -8,8 +8,7 @@ export const About = () => {
     <div style={{ margin: "0 10% 10% 16%" }}>
       <Flex
         flexDirection="column"
-        minWidth="360px"
-        maxWidth="700px"
+        maxWidth="550px"
         gap={spacing.lg}
         justifyContent="flex-start"
         alignItems="flex-start"

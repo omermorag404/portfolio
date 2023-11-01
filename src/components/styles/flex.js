@@ -39,6 +39,7 @@ export const Flex = (_a) => {
       flexPack,
       width,
       flexSrink,
+      maxWidth,
     } = _a,
     // className,
     rest = __rest(_a, [
@@ -63,6 +64,7 @@ export const Flex = (_a) => {
       "flexPack",
       "width",
       "flexSrink",
+      "maxWidth",
     ]);
   return React.createElement(
     "div",
@@ -91,6 +93,7 @@ export const Flex = (_a) => {
           flexWrap,
           width,
           flexSrink,
+          maxWidth,
         },
         rest.style
       ),
