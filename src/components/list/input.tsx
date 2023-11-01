@@ -20,6 +20,7 @@ const Form = (props: any) => {
         alignItems={"center"}
         justifyContent={"center"}
         gap={spacing.m}
+        flexSrink="1"
       >
         <form
           onSubmit={handleSubmit}

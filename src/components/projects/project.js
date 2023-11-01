@@ -9,7 +9,7 @@ import styled from "styled-components";
 const ProjectStyledCard = styled(Flex) `
   padding: 24px;
   max-width: 360px;
-  min-width: 360px;
+  min-width: 400px;
   box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
   border: solid 1px ${colors.text};
@@ -20,7 +20,7 @@ const ProjectStyledCard = styled(Flex) `
   }
 `;
 function ProjectCard({ projectData }) {
-    return (React.createElement("div", null,
+    return (React.createElement("div", { style: { flexShrink: 1 } },
         React.createElement(Link, { to: projectData.link, style: { textDecoration: "none" } },
             React.createElement(ProjectStyledCard, { gap: spacing.lg, style: { borderRadius: 16 } },
                 React.createElement(H2, null, projectData.icon),

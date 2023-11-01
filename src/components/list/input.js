@@ -11,7 +11,7 @@ const Form = (props) => {
         event.preventDefault();
     };
     return (React.createElement("div", null,
-        React.createElement(Flex, { flexDirection: "column", alignItems: "center", justifyContent: "center", gap: spacing.m },
+        React.createElement(Flex, { flexDirection: "column", alignItems: "center", justifyContent: "center", gap: spacing.m, flexSrink: "1" },
             React.createElement("form", { onSubmit: handleSubmit, style: { display: "flex", flexDirection: "column", gap: spacing.m } },
                 React.createElement(Input, { style: {
                         borderRadius: 4,

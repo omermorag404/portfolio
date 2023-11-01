@@ -35,6 +35,7 @@ const UL = styled.ul`
     z-index: 10;
     hieght: 100vh;
     width: 50vw;
+    
     background-color: ${colors.darkestBlue};
     position: fixed;
     align-items: flex-start;

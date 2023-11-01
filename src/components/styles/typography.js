@@ -31,6 +31,7 @@ export const P = styled.p `
   color: ${(props) => props.color || colors.text};
   margin: 0;
   font-family: Source Code Pro;
+  word-break: "break-all";
 `;
 export const Pbold = styled(P) `
   font-weight: 600;

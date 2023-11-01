@@ -24,6 +24,7 @@ export type FlexProps = {
   style?: string | any;
   children?: string | any;
   className?: any;
+  flexSrink?: string;
 
   // rest: any;
 };
@@ -49,6 +50,7 @@ export const Flex = ({
   flexWrap,
   flexPack,
   width,
+  flexSrink,
   // className,
 
   ...rest
@@ -77,6 +79,7 @@ export const Flex = ({
       marginTop,
       flexWrap,
       width,
+      flexSrink,
       // className,
 
       ...rest.style,

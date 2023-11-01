@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Flex } from "./components/styles/flex";
 import spacing from "./components/styles/spacing";
 import NavBar from "./components/navigation/navbar";
+import "./components/styles/style.css";
 const App = () => {
   return (
     <Flex

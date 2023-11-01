@@ -1,13 +1,12 @@
+import { animated, easings, useSpring } from "@react-spring/web";
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
-import reactLogo from "../components/img/reactLogo.png";
-import spacing from "../components/styles/spacing";
-import { H5 } from "../components/styles/typography";
-import { Flex } from "../components/styles/flex";
-import { animated, easings, useSpring } from "@react-spring/web";
 import { projectData } from "../components/data/data";
 import ProjectCard from "../components/projects/project";
 import colors from "../components/styles/colors";
+import { Flex } from "../components/styles/flex";
+import spacing from "../components/styles/spacing";
+import { H5 } from "../components/styles/typography";
 
 export const Home = () => {
   const springs = useSpring({
@@ -30,11 +29,10 @@ export const Home = () => {
       <Flex
         flexDirection={"column"}
         gap={spacing.xxl}
-        marginTop={80}
         alignItems={"center"}
         padding={"40px"}
       >
-        {/* <H5
+        <H5
           style={{
             fontSize: 40,
             fontFamily: "Source Code Pro",
@@ -49,7 +47,7 @@ export const Home = () => {
               strings: ["I learn React.js", "It's crazy, right?"],
             }}
           />
-        </H5> */}
+        </H5>
       </Flex>
       {showProjects && (
         <animated.div
