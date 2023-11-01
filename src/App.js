@@ -11,7 +11,7 @@ const App = () => {
             width: "100vw",
             gap: spacing.xxl,
         } },
-        React.createElement("div", { style: { position: "sticky", top: "0", width: "100%" } },
+        React.createElement("div", { style: { position: "sticky", top: "0", width: "100%", zIndex: 999 } },
             React.createElement(NavBar, null)),
         React.createElement(Outlet, null)));
 };

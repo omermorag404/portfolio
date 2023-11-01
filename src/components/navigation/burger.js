@@ -32,7 +32,7 @@ const UL = styled.ul`
   @media (max-width: 767px) {
     display: {({open})} => setOpen=open;
     flex-direction: column;
-    z-index: 10;
+    z-index: 999;
     hieght: 100vh;
     width: 50vw;
     
@@ -58,6 +58,7 @@ const Burger = () => {
       <CTA
         variant="tertiary"
         buttonSize="sm"
+        style={{ marginRight: "24px" }}
         onClick={() => {
           setOpen((old) => !old);
         }}

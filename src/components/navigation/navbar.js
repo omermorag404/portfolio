@@ -18,6 +18,7 @@ function NavBar() {
         width: "100%",
         backgroundColor: colors.darkestBlue,
         alignItems: "center",
+        zIndex: 999,
       }}
     >
       <Flex

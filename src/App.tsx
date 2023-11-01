@@ -14,7 +14,7 @@ const App = () => {
         gap: spacing.xxl,
       }}
     >
-      <div style={{ position: "sticky", top: "0", width: "100%" }}>
+      <div style={{ position: "sticky", top: "0", width: "100%", zIndex: 999 }}>
         <NavBar />
       </div>
       <Outlet />

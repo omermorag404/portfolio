@@ -27,13 +27,9 @@ const Form = (props: any) => {
           style={{ display: "flex", flexDirection: "column", gap: spacing.m }}
         >
           <Input
-            style={{
-              borderRadius: 4,
-              height: 32,
-              width: 350,
-              padding: 16,
+            sx={{
+              width: "300px",
               color: colors.text,
-              backgroundColor: colors.midBlue,
             }}
             value={name}
             spellCheck="true"

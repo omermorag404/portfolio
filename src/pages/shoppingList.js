@@ -32,7 +32,13 @@ const ShoppingList = (props) => {
       >
         <H3 color={colors.text}>Hello,{name}</H3>
         <H4 color={colors.text}>Welcome to shopping list</H4>
-        <Flex style={{ gap: spacing.xs }}>
+        <Flex
+          style={{
+            gap: spacing.xs,
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           <P>
             You have {items.length - items.filter((i) => i.checked).length}{" "}
           </P>
@@ -74,7 +80,7 @@ const ShoppingList = (props) => {
                   flexDirection="column"
                   id={someItem.id}
                   style={{
-                    width: 315,
+                    width: "315px",
                     border: "1px solid",
                     borderColor: colors.text,
                     borderRadius: "4px",

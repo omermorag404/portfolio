@@ -13,13 +13,9 @@ const Form = (props) => {
     return (React.createElement("div", null,
         React.createElement(Flex, { flexDirection: "column", alignItems: "center", justifyContent: "center", gap: spacing.m, flexSrink: "1" },
             React.createElement("form", { onSubmit: handleSubmit, style: { display: "flex", flexDirection: "column", gap: spacing.m } },
-                React.createElement(Input, { style: {
-                        borderRadius: 4,
-                        height: 32,
-                        width: 350,
-                        padding: 16,
+                React.createElement(Input, { sx: {
+                        width: "300px",
                         color: colors.text,
-                        backgroundColor: colors.midBlue,
                     }, value: name, spellCheck: "true", placeholder: "Write item", onChange: (event) => {
                         setName(event.target.value);
                     } }),
