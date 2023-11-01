@@ -1,12 +1,11 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import colors from "../styles/colors";
-
 import { AutoAwesome, ThumbDown, ThumbUp } from "@mui/icons-material";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShareIcon from "@mui/icons-material/Share";
 import Timer from "@mui/icons-material/TimerOutlined";
 import { Avatar } from "@mui/material";
-import { Flex } from "../styles/flex";
+import styled from "styled-components";
 import { CTA } from "../buttons/button";
 import { CardData } from "../data/data";
 import card1 from "../img/card1.jpeg";
@@ -15,8 +14,11 @@ import card3 from "../img/card3.jpeg";
 import card4 from "../img/card4.jpeg";
 import card5 from "../img/card5.jpeg";
 import card6 from "../img/card6.jpeg";
+import textSize from "../sizes/textSize";
+import colors from "../styles/colors";
+import { Flex } from "../styles/flex";
 import spacing from "../styles/spacing";
-import { H3, H5, Label, P } from "../styles/typography";
+import { Label } from "../styles/typography";
 
 // Card color
 
@@ -33,6 +35,25 @@ const cardColor: { [key: string]: { borderBottom: string } } = {
 const imgs = [card1, card2, card3, card4, card5, card6];
 
 function Card({ cardsData }: { cardsData: CardData }) {
+  const H3 = styled.h3`
+    font-family: "roboto";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: ${textSize.lg};
+    color: ${colors.darkGrey} p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      color: red;
+    }
+    h5 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      color: red;
+    }
+  `;
   return (
     <div
       style={{
@@ -83,21 +104,23 @@ function Card({ cardsData }: { cardsData: CardData }) {
       </div>
       <div style={{ padding: spacing.s, flex: 2 }}>
         <Flex flexDirection={"column"} alignItems="flex-start" gap={spacing.m}>
-          <H3>{cardsData.title}</H3>
+          <H3 style={{ fontFamily: "roboto" }}>{cardsData.title}</H3>
           <Flex gap={spacing.m} alignItems={"center"}>
             <Label style={{ fontSize: 14 }}>{cardsData.projectName}</Label>
             <Flex alignItems={"center"} gap={spacing.xs}>
-              <Timer style={{ fontSize: 20 }} />
-              <Label style={{ fontSize: 14 }}>X hours per week</Label>
+              <Timer style={{ fontSize: 20, fontFamily: "roboto" }} />
+              <Label style={{ fontSize: 14, fontFamily: "roboto" }}>
+                X hours per week
+              </Label>
             </Flex>
           </Flex>
           <Flex alignItems={"center"} gap={spacing.m}>
             <Avatar />
-            <H5 color={colors.darkGrey}>User name</H5>
+            <h5 color={colors.darkGrey}>User name</h5>
           </Flex>
           <Flex alignItems={"center"} gap={spacing.s}>
             <AutoAwesome style={{ color: colors.yellow }} />
-            <P>Gain skills important to your organization </P>
+            <p>Gain skills important to your organization </p>
           </Flex>
         </Flex>
       </div>
@@ -128,7 +151,11 @@ function Card({ cardsData }: { cardsData: CardData }) {
             <CTA variant="tertiary" buttonSize="sBlg">
               <ThumbDown />{" "}
             </CTA>
-            <CTA variant="primary" buttonSize="sBlg">
+            <CTA
+              variant="primary"
+              buttonSize="sBlg"
+              style={{ backgroundColor: "red" }}
+            >
               <ThumbUp />
             </CTA>
           </Flex>

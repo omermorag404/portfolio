@@ -15,7 +15,13 @@ export default ({ text, onEditDone, onDelete, isChecked, onToggle, id }) => {
   if (isEdit) {
     return (
       <div style={{ position: "relative" }}>
-        <Flex flexDirection="row" gap={8} position="absolute" top="0" right="0">
+        <Flex
+          flexDirection="row"
+          gap={8}
+          position="absolute"
+          top="-5px"
+          right="0"
+        >
           <CTA
             variant="secondary"
             buttonSize="sm"
@@ -50,6 +56,7 @@ export default ({ text, onEditDone, onDelete, isChecked, onToggle, id }) => {
                 onEditDone(inputValue);
               }
             }}
+            style={{ width: "50%" }}
           ></input>{" "}
         </Flex>
       </div>
@@ -63,7 +70,7 @@ export default ({ text, onEditDone, onDelete, isChecked, onToggle, id }) => {
           flexDirection="row"
           gap={8}
           position="absolute"
-          top="-6"
+          top="-5px"
           right="0"
         >
           <CTA buttonSize="sm" variant="secondary" onClick={onDelete}>
@@ -95,7 +102,13 @@ export default ({ text, onEditDone, onDelete, isChecked, onToggle, id }) => {
   // default
   return (
     <div style={{ position: "relative" }} id={id}>
-      <Flex flexDirection="row" gap={8} position="absolute" top="-6" right="0">
+      <Flex
+        flexDirection="row"
+        gap={8}
+        position="absolute"
+        top="-5px"
+        right="0"
+      >
         <CTA buttonSize="sm" variant="secondary" onClick={onDelete}>
           Delete
         </CTA>

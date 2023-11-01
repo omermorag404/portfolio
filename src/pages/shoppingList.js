@@ -57,8 +57,8 @@ const ShoppingList = (props) => {
           flexDirection="column"
           alignItems={"center"}
           gap={spacing.m}
-          borderRadius="16px"
-          maxHeight={"400px"}
+          borderRadius={"4px"}
+          maxHeight={"100vh"}
           overflowY={"scroll"}
           margin={spacing.lg}
           padding={16}
@@ -76,8 +76,8 @@ const ShoppingList = (props) => {
                   style={{
                     width: 315,
                     border: "1px solid",
-                    borderColor: "Grey",
-                    borderRadius: 16,
+                    borderColor: colors.text,
+                    borderRadius: "4px",
                     padding: spacing.m,
                     backgroundColor: colors.midBlue,
                   }}

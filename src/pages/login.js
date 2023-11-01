@@ -64,7 +64,15 @@ export const Login = (props) => {
     },
   });
   return (
-    <div>
+    <Flex
+      style={{
+        border: `1px solid ${colors.green}`,
+        borderRadius: "8px",
+        padding: spacing.xxl,
+        flexDirection: "column",
+        gap: spacing.xl,
+      }}
+    >
       <Flex flexDirection={"column"} alignItems={"center"} gap={spacing.s}>
         <H2>Welcome</H2>
         <P>Please use your details to login</P>
@@ -77,13 +85,6 @@ export const Login = (props) => {
           alignItems: "center",
           gap: spacing.lg,
           backgroundColor: colors.midBlue,
-          width: 450,
-          borderRadius: 16,
-          border: "2 solid red",
-          boxShadow: `1px 2px 9px rgba(0, 0, 0, 0.2)`,
-          padding: 24,
-          marginRight: "auto",
-          marginTop: 32,
         }}
       >
         <section
@@ -173,6 +174,6 @@ export const Login = (props) => {
           </Alert>
         </Snackbar>
       </div>
-    </div>
+    </Flex>
   );
 };
