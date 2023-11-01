@@ -7,9 +7,11 @@ import { H2, H4, P } from "../styles/typography";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 const ProjectStyledCard = styled(Flex) `
+  flex-wrap: wrap;
   padding: 24px;
-  max-width: 360px;
-  min-width: 400px;
+
+  min-width: 320px;
+  max-with: 50%;
   box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
   border: solid 1px ${colors.text};
@@ -20,11 +22,11 @@ const ProjectStyledCard = styled(Flex) `
   }
 `;
 function ProjectCard({ projectData }) {
-    return (React.createElement("div", { style: { flexShrink: 1 } },
+    return (React.createElement("div", null,
         React.createElement(Link, { to: projectData.link, style: { textDecoration: "none" } },
             React.createElement(ProjectStyledCard, { gap: spacing.lg, style: { borderRadius: 16 } },
                 React.createElement(H2, null, projectData.icon),
-                React.createElement(Flex, { flexDirection: "column", gap: spacing.s, alignItems: "start" },
+                React.createElement(Flex, { flexDirection: "column", gap: spacing.s, alignItems: "start", flexWrap: "wrap" },
                     " ",
                     React.createElement(H4, { color: colors.purple }, projectData.name),
                     React.createElement(P, { style: { color: colors.text } }, projectData.date))))));
