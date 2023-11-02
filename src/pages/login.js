@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { React, useState } from "react";
-
+import logo from "../logo.svg";
 import { Alert, Input, Snackbar } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -65,14 +66,16 @@ export const Login = (props) => {
   return (
     <Flex
       style={{
-        border: `1px solid ${colors.green}`,
-        borderRadius: "8px",
-        padding: spacing.xxl,
         flexDirection: "column",
-        gap: spacing.xl,
+        gap: spacing.lg,
       }}
     >
       <Flex flexDirection={"column"} alignItems={"center"} gap={spacing.s}>
+        <img
+          src={logo}
+          alt="React Image"
+          style={{ width: "100px", height: "100px", padding: "0px" }}
+        />
         <H2>Welcome</H2>
         <P>Please use your details to login</P>
       </Flex>
@@ -92,7 +95,7 @@ export const Login = (props) => {
             flexDirection: "column",
             alignItems: "start",
             gap: spacing.xs,
-            maxWidth: 360,
+            maxWidth: 315,
           }}
         >
           <label htmlFor="name">User name</label>
@@ -104,7 +107,7 @@ export const Login = (props) => {
             onChange={formik.handleChange}
             // onBlur={formik.handleBlur}
             value={formik.values.email}
-            style={{ width: 360, color: colors.text }}
+            style={{ width: 315, color: colors.text }}
             color={formik.errors.username ? "error" : "primary"}
           />
           {formik.errors.username ? (
@@ -117,7 +120,7 @@ export const Login = (props) => {
             flexDirection: "column",
             alignItems: "start",
             gap: spacing.xs,
-            maxWidth: 360,
+            maxWidth: 315,
           }}
         >
           <label htmlFor="name">Password</label>
@@ -129,7 +132,7 @@ export const Login = (props) => {
             onChange={formik.handleChange}
             // onBlur={formik.handleBlur}
             value={formik.values.email}
-            style={{ width: 360, color: colors.text }}
+            style={{ width: 315, color: colors.text }}
           />
           {formik.errors.password ? (
             <div style={{ color: colors.red }}>{formik.errors.password}</div>
@@ -141,7 +144,7 @@ export const Login = (props) => {
           type="submit"
           disabled={!formik.isValid || formik.isSubmitting}
           style={{
-            width: 360,
+            width: 315,
           }}
         >
           Login

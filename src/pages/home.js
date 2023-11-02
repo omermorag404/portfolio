@@ -15,7 +15,7 @@ export const Home = () => {
     to: { y: 0, opacity: 1 },
     config: {
       easing: easings.steps(24),
-      duration: 3000,
+      duration: 2000,
     },
   });
 
@@ -31,7 +31,7 @@ export const Home = () => {
   React.useEffect(() => {
     setTimeout(() => {
       setShowProjects(true);
-    }, 1500);
+    }, 500);
   }, []);
   return (
     <Flex flexDirection={"column"} gap={spacing.xxxl}>
