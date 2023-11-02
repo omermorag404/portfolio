@@ -7,6 +7,7 @@ import colors from "../components/styles/colors";
 import { Flex } from "../components/styles/flex";
 import spacing from "../components/styles/spacing";
 import { H5 } from "../components/styles/typography";
+import styled from "styled-components";
 
 export const Home = () => {
   const springs = useSpring({
@@ -18,6 +19,14 @@ export const Home = () => {
     },
   });
 
+  const Animation = styled.h5`
+    font-size: 40px;
+    color: ${colors.text};
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+  `;
+
   const [showProjects, setShowProjects] = React.useState(false);
   React.useEffect(() => {
     setTimeout(() => {
@@ -25,20 +34,9 @@ export const Home = () => {
     }, 1500);
   }, []);
   return (
-    <Flex flexDirection={"column"} gap={spacing.xxxl} padding={40}>
-      <Flex
-        flexDirection={"column"}
-        gap={spacing.xxl}
-        alignItems={"center"}
-        padding={"40px"}
-      >
-        <H5
-          style={{
-            fontSize: 40,
-            fontFamily: "Source Code Pro",
-            color: colors.text,
-          }}
-        >
+    <Flex flexDirection={"column"} gap={spacing.xxxl}>
+      <Flex flexDirection={"column"} gap={spacing.xxl} alignItems={"center"}>
+        <Animation>
           <TypewriterComponent
             options={{
               autoStart: true,
@@ -47,7 +45,7 @@ export const Home = () => {
               strings: ["I learn React.js", "It's crazy, right?"],
             }}
           />
-        </H5>
+        </Animation>
       </Flex>
       {showProjects && (
         <animated.div
@@ -55,7 +53,12 @@ export const Home = () => {
             ...springs,
           }}
         >
-          <Flex gap={spacing.lg} flexWrap={"wrap"} justifyContent={"center"}>
+          <Flex
+            gap={spacing.lg}
+            flexWrap={"wrap"}
+            justifyContent={"center"}
+            padding="0 0  40px 0"
+          >
             {projectData.map((item, index) => {
               return <ProjectCard projectData={item} />;
             })}
