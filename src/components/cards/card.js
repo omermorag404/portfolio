@@ -32,6 +32,7 @@ const imgs = [card1, card2, card3, card4, card5, card6];
 function Card({ cardsData }) {
     var _a;
     const CardTitle = styled.h3 `
+    font-family: "Roboto";
     font-size: ${textSize.lg};
     color: ${colors.darkGrey};
   `;
