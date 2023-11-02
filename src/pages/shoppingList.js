@@ -66,7 +66,7 @@ const ShoppingList = (props) => {
           gap={spacing.m}
           borderRadius={"4px"}
           maxHeight={"50vh"}
-          overflowY={" scroll"}
+          overflowY={" auto"}
           margin={spacing.lg}
           padding={16}
           justifyContent={"flexStart"}
