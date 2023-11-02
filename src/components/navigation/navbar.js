@@ -14,6 +14,7 @@ function NavBar() {
   `;
   return (
     <div
+      className="nav"
       style={{
         width: "100%",
         backgroundColor: colors.darkestBlue,

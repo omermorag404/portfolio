@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React from "react";
 import { Link } from "react-router-dom";
 import Item from "../components/list/Item";
@@ -64,8 +65,8 @@ const ShoppingList = (props) => {
           alignItems={"center"}
           gap={spacing.m}
           borderRadius={"4px"}
-          maxHeight={"100vh"}
-          overflowY={"scroll"}
+          maxHeight={"50vh"}
+          overflowY={" scroll"}
           margin={spacing.lg}
           padding={16}
           justifyContent={"flexStart"}

@@ -23,7 +23,7 @@ const buttonVariant: {
   primary: {
     backgroundColor: colors.action,
     hover: {
-      backgroundColor: colors.blue,
+      backgroundColor: colors.darkAction,
       color: colors.white,
     },
     disabled: {

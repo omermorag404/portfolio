@@ -5,11 +5,13 @@ import colors from "./colors";
 export type Title = {
   textSize?: string;
   color?: string;
+  fontFamily?: string;
 };
 export const H1 = styled.h1`
   color: ${(props: any) => props.color || colors.text};
-  text-align: center;
   font-size: ${(props: Title) => props.textSize || textSize.xxl};
+  font-family: ${(props: Title) => props.fontFamily || "Source Code Pro"};
+  text-align: center;
   font-weight: 600;
   margin: 0;
   }
@@ -34,8 +36,8 @@ export const H6 = styled(H1)`
 export const P = styled.p<Title | HTMLParagraphElement>`
   font-size: ${(props: Title) => props.textSize || textSize.sm};
   color: ${(props: Title) => props.color || colors.text};
+  font-family: ${(props: Title) => props.fontFamily || "Source Code Pro"};
   margin: 0;
-  font-family: Source Code Pro;
   word-break: "break-all";
 `;
 export const Pbold = styled(P)`

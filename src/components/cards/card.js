@@ -32,16 +32,18 @@ const imgs = [card1, card2, card3, card4, card5, card6];
 function Card({ cardsData }) {
     var _a;
     const CardTitle = styled.h3 `
-    font-family: "Roboto";
+    font-family: Roboto, sans-serif;
     font-size: ${textSize.lg};
     color: ${colors.darkGrey};
   `;
     const CardContent = styled.p `
     font-size: ${textSize.sm};
+    font-family: Roboto, sans-serif;
     color: ${colors.darkGrey};
   `;
-    const CardLabel = styled.label `
-    font-size: ${textSize.sm};
+    const CardLabel = styled.p `
+    font-size: ${textSize.xs};
+    font-family: Roboto, sans-serif;
     color: ${colors.darkGrey};
   `;
     return (React.createElement("div", { className: "card", style: {
@@ -73,6 +75,7 @@ function Card({ cardsData }) {
                     left: spacing.m,
                     top: spacing.m,
                     borderRadius: 4,
+                    fontFamily: "Roboto, sans-serif;",
                 } }, cardsData.label),
             React.createElement("img", { src: imgs[Math.floor(Math.random() * imgs.length)], width: "100%", style: {
                     borderRadius: "16px",
@@ -80,12 +83,12 @@ function Card({ cardsData }) {
                 } })),
         React.createElement("div", { style: { padding: spacing.s, flex: 2 } },
             React.createElement(Flex, { flexDirection: "column", alignItems: "flex-start", gap: spacing.m },
-                React.createElement(CardTitle, { style: { fontFamily: "roboto" } }, cardsData.title),
+                React.createElement(CardTitle, null, cardsData.title),
                 React.createElement(Flex, { gap: spacing.m, alignItems: "center" },
                     React.createElement(CardLabel, { style: { fontSize: 14 } }, cardsData.projectName),
                     React.createElement(Flex, { alignItems: "center", gap: spacing.xs },
                         React.createElement(Timer, null),
-                        React.createElement(CardLabel, { style: { fontSize: 14, fontFamily: "roboto" } }, "X hours per week"))),
+                        React.createElement(CardLabel, null, "X hours per week"))),
                 React.createElement(Flex, { alignItems: "center", gap: spacing.m },
                     React.createElement(Avatar, null),
                     React.createElement(CardLabel, { color: colors.darkGrey }, "User name")),
@@ -113,7 +116,7 @@ function Card({ cardsData }) {
                         React.createElement(FavoriteBorderOutlinedIcon, null))),
                 React.createElement(Flex, { gap: spacing.s },
                     " ",
-                    React.createElement(CardButton, { variant: "tertiary", buttonSize: "sBlg" },
+                    React.createElement(CardButton, { variant: "secondary", buttonSize: "sBlg" },
                         React.createElement(ThumbDown, null),
                         " "),
                     React.createElement(CardButton, { variant: "primary", buttonSize: "sBlg" },

@@ -12,6 +12,7 @@ const App = () => {
         flexDirection: "column",
         width: "100vw",
         gap: spacing.xxl,
+        flexWrap: "wrap",
       }}
     >
       <div style={{ position: "sticky", top: "0", width: "100%", zIndex: 999 }}>

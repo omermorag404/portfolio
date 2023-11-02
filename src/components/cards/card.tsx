@@ -36,16 +36,18 @@ const imgs = [card1, card2, card3, card4, card5, card6];
 
 function Card({ cardsData }: { cardsData: CardData }) {
   const CardTitle = styled.h3`
-    font-family: "Roboto";
+    font-family: Roboto, sans-serif;
     font-size: ${textSize.lg};
     color: ${colors.darkGrey};
   `;
   const CardContent = styled.p`
     font-size: ${textSize.sm};
+    font-family: Roboto, sans-serif;
     color: ${colors.darkGrey};
   `;
-  const CardLabel = styled.label`
-    font-size: ${textSize.sm};
+  const CardLabel = styled.p`
+    font-size: ${textSize.xs};
+    font-family: Roboto, sans-serif;
     color: ${colors.darkGrey};
   `;
   return (
@@ -84,6 +86,7 @@ function Card({ cardsData }: { cardsData: CardData }) {
             left: spacing.m,
             top: spacing.m,
             borderRadius: 4,
+            fontFamily: "Roboto, sans-serif;",
           }}
         >
           {cardsData.label}
@@ -99,18 +102,14 @@ function Card({ cardsData }: { cardsData: CardData }) {
       </div>
       <div style={{ padding: spacing.s, flex: 2 }}>
         <Flex flexDirection={"column"} alignItems="flex-start" gap={spacing.m}>
-          <CardTitle style={{ fontFamily: "roboto" }}>
-            {cardsData.title}
-          </CardTitle>
+          <CardTitle>{cardsData.title}</CardTitle>
           <Flex gap={spacing.m} alignItems={"center"}>
             <CardLabel style={{ fontSize: 14 }}>
               {cardsData.projectName}
             </CardLabel>
             <Flex alignItems={"center"} gap={spacing.xs}>
               <Timer />
-              <CardLabel style={{ fontSize: 14, fontFamily: "roboto" }}>
-                X hours per week
-              </CardLabel>
+              <CardLabel>X hours per week</CardLabel>
             </Flex>
           </Flex>
           <Flex alignItems={"center"} gap={spacing.m}>
@@ -149,7 +148,7 @@ function Card({ cardsData }: { cardsData: CardData }) {
           </Flex>
           <Flex gap={spacing.s}>
             {" "}
-            <CardButton variant="tertiary" buttonSize="sBlg">
+            <CardButton variant="secondary" buttonSize="sBlg">
               <ThumbDown />{" "}
             </CardButton>
             <CardButton variant="primary" buttonSize="sBlg">

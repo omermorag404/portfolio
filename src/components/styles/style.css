@@ -11,9 +11,6 @@ body {
 
   align-items: center;
 }
-.input {
-  color: #ff0000;
-}
 
 a {
   color: #73daca;
@@ -22,6 +19,7 @@ a {
 a:visited {
   color: #73daca;
 }
+
 .card {
   font-family: "Roboto" !important;
 }
@@ -37,11 +35,11 @@ a:visited {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
-.title a:hover {
+.nav a:hover {
   color: #73daca !important;
   text-decoration: underline !important;
 }
-.title .logo a:hover {
+.nav .logo a:hover {
   color: rgb(255, 255, 255) !important;
   text-decoration: underline !important;
 }

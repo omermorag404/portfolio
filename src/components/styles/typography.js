@@ -3,8 +3,9 @@ import textSize from "../sizes/textSize";
 import colors from "./colors";
 export const H1 = styled.h1 `
   color: ${(props) => props.color || colors.text};
-  text-align: center;
   font-size: ${(props) => props.textSize || textSize.xxl};
+  font-family: ${(props) => props.fontFamily || "Source Code Pro"};
+  text-align: center;
   font-weight: 600;
   margin: 0;
   }
@@ -29,8 +30,8 @@ export const H6 = styled(H1) `
 export const P = styled.p `
   font-size: ${(props) => props.textSize || textSize.sm};
   color: ${(props) => props.color || colors.text};
+  font-family: ${(props) => props.fontFamily || "Source Code Pro"};
   margin: 0;
-  font-family: Source Code Pro;
   word-break: "break-all";
 `;
 export const Pbold = styled(P) `

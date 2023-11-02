@@ -5,14 +5,14 @@ import { Flex } from "../components/styles/flex";
 import colors from "../components/styles/colors";
 export const About = () => {
   return (
-    <div style={{ margin: "0 10% 10% 16%" }}>
+    <div style={{ margin: "0 5% 5% 5%", justifyContent: "center" }}>
       <Flex
         flexDirection="column"
-        maxWidth="550px"
         gap={spacing.lg}
+        maxWidth="500px"
         justifyContent="flex-start"
         alignItems="flex-start"
-        padding="10px ,40px ,40px ,40px "
+        padding="10px "
         margin="40px"
       >
         <H1 color={colors.purple}>About this project</H1>
