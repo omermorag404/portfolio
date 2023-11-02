@@ -6,7 +6,7 @@ import ShareIcon from "@mui/icons-material/Share";
 import Timer from "@mui/icons-material/TimerOutlined";
 import { Avatar } from "@mui/material";
 import styled from "styled-components";
-import { CTA } from "../buttons/button";
+import { CardButton } from "./cardButton";
 import card1 from "../img/card1.jpeg";
 import card2 from "../img/card2.jpeg";
 import card3 from "../img/card3.jpeg";
@@ -17,7 +17,7 @@ import textSize from "../sizes/textSize";
 import colors from "../styles/colors";
 import { Flex } from "../styles/flex";
 import spacing from "../styles/spacing";
-import { Label } from "../styles/typography";
+import "../styles/style.css";
 // Card color
 const cardColor = {
     Project: {
@@ -31,26 +31,19 @@ const cardColor = {
 const imgs = [card1, card2, card3, card4, card5, card6];
 function Card({ cardsData }) {
     var _a;
-    const H3 = styled.h3 `
-    font-family: "roboto";
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    const CardTitle = styled.h3 `
     font-size: ${textSize.lg};
-    color: ${colors.darkGrey} p {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-      color: red;
-    }
-    h5 {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-      color: red;
-    }
+    color: ${colors.darkGrey};
   `;
-    return (React.createElement("div", { style: {
+    const CardContent = styled.p `
+    font-size: ${textSize.sm};
+    color: ${colors.darkGrey};
+  `;
+    const CardLabel = styled.label `
+    font-size: ${textSize.sm};
+    color: ${colors.darkGrey};
+  `;
+    return (React.createElement("div", { className: "card", style: {
             backgroundColor: colors.white,
             maxWidth: 360,
             minWidth: 360,
@@ -86,18 +79,20 @@ function Card({ cardsData }) {
                 } })),
         React.createElement("div", { style: { padding: spacing.s, flex: 2 } },
             React.createElement(Flex, { flexDirection: "column", alignItems: "flex-start", gap: spacing.m },
-                React.createElement(H3, { style: { fontFamily: "roboto" } }, cardsData.title),
+                React.createElement(CardTitle, { style: { fontFamily: "roboto" } }, cardsData.title),
                 React.createElement(Flex, { gap: spacing.m, alignItems: "center" },
-                    React.createElement(Label, { style: { fontSize: 14 } }, cardsData.projectName),
+                    React.createElement(CardLabel, { style: { fontSize: 14 } }, cardsData.projectName),
                     React.createElement(Flex, { alignItems: "center", gap: spacing.xs },
-                        React.createElement(Timer, { style: { fontSize: 20, fontFamily: "roboto" } }),
-                        React.createElement(Label, { style: { fontSize: 14, fontFamily: "roboto" } }, "X hours per week"))),
+                        React.createElement(Timer, null),
+                        React.createElement(CardLabel, { style: { fontSize: 14, fontFamily: "roboto" } }, "X hours per week"))),
                 React.createElement(Flex, { alignItems: "center", gap: spacing.m },
                     React.createElement(Avatar, null),
-                    React.createElement("h5", { color: colors.darkGrey }, "User name")),
+                    React.createElement(CardLabel, { color: colors.darkGrey }, "User name")),
                 React.createElement(Flex, { alignItems: "center", gap: spacing.s },
                     React.createElement(AutoAwesome, { style: { color: colors.yellow } }),
-                    React.createElement("p", null, "Gain skills important to your organization ")))),
+                    React.createElement(CardContent, null,
+                        "Gain skills important to your organization",
+                        " ")))),
         React.createElement("div", { style: {
                 padding: spacing.s,
                 position: "absolute",
@@ -110,17 +105,17 @@ function Card({ cardsData }) {
             React.createElement(Flex, { gap: spacing.s, justifyContent: "space-between" },
                 React.createElement(Flex, { gap: spacing.s },
                     " ",
-                    React.createElement(CTA, { variant: "tertiary", buttonSize: "sBlg" },
+                    React.createElement(CardButton, { variant: "tertiary", buttonSize: "sBlg" },
                         React.createElement(ShareIcon, null),
                         " "),
-                    React.createElement(CTA, { variant: "tertiary", buttonSize: "sBlg" },
+                    React.createElement(CardButton, { variant: "tertiary", buttonSize: "sBlg" },
                         React.createElement(FavoriteBorderOutlinedIcon, null))),
                 React.createElement(Flex, { gap: spacing.s },
                     " ",
-                    React.createElement(CTA, { variant: "tertiary", buttonSize: "sBlg" },
+                    React.createElement(CardButton, { variant: "tertiary", buttonSize: "sBlg" },
                         React.createElement(ThumbDown, null),
                         " "),
-                    React.createElement(CTA, { variant: "primary", buttonSize: "sBlg", style: { backgroundColor: "red" } },
+                    React.createElement(CardButton, { variant: "primary", buttonSize: "sBlg" },
                         React.createElement(ThumbUp, null)))))));
 }
 export default Card;

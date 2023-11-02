@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "../components/cards/card";
-import { cardsData } from "../components/data/data";
-import spacing from "../components/styles/spacing";
+import { cardsData } from "../components/cards/dataCards";
 import { Flex } from "../components/styles/flex";
+import spacing from "../components/styles/spacing";
 export const Cards = () => {
     return (React.createElement("div", null,
         " ",

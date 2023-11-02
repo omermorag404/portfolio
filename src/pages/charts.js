@@ -1,6 +1,6 @@
 import React from "react";
 import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts";
-import { chartData } from "../components/data/data";
+import { chartData } from "../components/data/dataDashboard";
 import colors from "../components/styles/colors";
 import "../components/styles/style.css";
 const data = chartData;

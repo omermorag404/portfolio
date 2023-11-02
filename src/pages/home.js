@@ -1,7 +1,7 @@
 import { animated, easings, useSpring } from "@react-spring/web";
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
-import { projectData } from "../components/data/data";
+import { projectData } from "../components/projects/dataProjects";
 import ProjectCard from "../components/projects/project";
 import colors from "../components/styles/colors";
 import { Flex } from "../components/styles/flex";

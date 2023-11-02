@@ -6,7 +6,6 @@ import * as Yup from "yup";
 import { CTA } from "../components/buttons/button";
 import colors from "../components/styles/colors";
 import spacing from "../components/styles/spacing";
-
 import { H2, P } from "../components/styles/typography";
 import { Flex } from "../components/styles/flex";
 
