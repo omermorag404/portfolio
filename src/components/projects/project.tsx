@@ -4,7 +4,6 @@ import colors from "../styles/colors";
 import spacing from "../styles/spacing";
 import "../styles/style.css";
 import { H2, H4, P } from "../styles/typography";
-
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 const ProjectStyledCard = styled(Flex)`
