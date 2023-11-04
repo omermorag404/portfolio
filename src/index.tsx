@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
-// createMemoryRouter,
 import "./components/styles/style.css";
 import App from "./App";
 import { Home } from "./pages/home";
