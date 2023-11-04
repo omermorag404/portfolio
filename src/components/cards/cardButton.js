@@ -4,36 +4,36 @@ import textSize from "../sizes/textSize";
 import colors from "../styles/colors";
 const buttonVariant = {
     primary: {
-        backgroundColor: colors.action,
+        backgroundColor: colors.gloatAction,
         hover: {
-            backgroundColor: colors.darkAction,
+            backgroundColor: colors.gloatDarkAction,
             color: colors.white,
         },
         disabled: {
-            backgroundColor: colors.grey,
-            color: colors.darkGrey,
+            backgroundColor: colors.gray200,
+            color: colors.gray300,
         },
         color: colors.white,
-        borderColor: colors.action,
+        borderColor: colors.gloatAction,
         fontSize: textSize.sm,
     },
     secondary: {
         backgroundColor: colors.white,
-        color: colors.action,
-        borderColor: colors.action,
+        color: colors.gloatAction,
+        borderColor: colors.gloatAction,
         fontSize: textSize.sm,
         hover: {
-            backgroundColor: colors.action,
+            backgroundColor: colors.gloatAction,
             color: colors.white,
         },
     },
     tertiary: {
         backgroundColor: colors.white,
         hover: {
-            backgroundColor: colors.lightGrey,
-            color: colors.action,
+            backgroundColor: colors.gray100,
+            color: colors.gloatAction,
         },
-        color: colors.action,
+        color: colors.gloatAction,
         borderColor: colors.white,
         fontSize: textSize.sm,
     },

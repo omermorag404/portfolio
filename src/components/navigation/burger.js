@@ -31,6 +31,7 @@ const UL = styled.ul`
   }
   @media (max-width: 767px) {
     display: {({open})} => setOpen=open;
+    background-color: ${colors.blue400};
     flex-direction: column;
     z-index: 999;
     hieght: 100vh;

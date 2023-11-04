@@ -21,7 +21,7 @@ export const Home = () => {
 
   const Animation = styled.h5`
     font-size: 40px;
-    color: ${colors.text};
+    color: ${colors.purple100};
     @media (max-width: 767px) {
       font-size: 24px;
     }

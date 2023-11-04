@@ -34,17 +34,17 @@ function Card({ cardsData }) {
     const CardTitle = styled.h3 `
     font-family: Roboto, sans-serif;
     font-size: ${textSize.lg};
-    color: ${colors.darkGrey};
+    color: ${colors.gray300};
   `;
     const CardContent = styled.p `
     font-size: ${textSize.sm};
     font-family: Roboto, sans-serif;
-    color: ${colors.darkGrey};
+    color: ${colors.gray300};
   `;
     const CardLabel = styled.p `
     font-size: ${textSize.xs};
     font-family: Roboto, sans-serif;
-    color: ${colors.darkGrey};
+    color: ${colors.gray300};
   `;
     return (React.createElement("div", { className: "card", style: {
             backgroundColor: colors.white,
@@ -69,7 +69,7 @@ function Card({ cardsData }) {
             } },
             React.createElement("div", { style: {
                     backgroundColor: colors.white,
-                    color: colors.darkGrey,
+                    color: colors.gray300,
                     padding: "8px",
                     position: "absolute",
                     left: spacing.m,
@@ -91,9 +91,9 @@ function Card({ cardsData }) {
                         React.createElement(CardLabel, null, "X hours per week"))),
                 React.createElement(Flex, { alignItems: "center", gap: spacing.m },
                     React.createElement(Avatar, null),
-                    React.createElement(CardLabel, { color: colors.darkGrey }, "User name")),
+                    React.createElement(CardLabel, { color: colors.gray300 }, "User name")),
                 React.createElement(Flex, { alignItems: "center", gap: spacing.s },
-                    React.createElement(AutoAwesome, { style: { color: colors.yellow } }),
+                    React.createElement(AutoAwesome, { style: { color: colors.gloatYellow } }),
                     React.createElement(CardContent, null,
                         "Gain skills important to your organization",
                         " ")))),

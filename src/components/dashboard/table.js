@@ -1,4 +1,4 @@
-import { StatusOnlineIcon } from "@heroicons/react/outline";
+import { ArrowUpIcon } from "@heroicons/react/outline";
 import {
   Badge,
   Card,
@@ -16,28 +16,28 @@ import { tableData } from "./dataDashboard";
 export const TableChart = () => (
   <Card>
     <Title>List of Swiss Federal Councillours</Title>
-    <Table className="max-w-lg mx-auto mt-5">
+    <Table className="max-w-xxl mx-auto mt-5">
       <TableHead>
         <TableRow>
-          <TableHeaderCell>Name</TableHeaderCell>
-          <TableHeaderCell>Position</TableHeaderCell>
-          <TableHeaderCell>Department</TableHeaderCell>
-          <TableHeaderCell>Status</TableHeaderCell>
+          <TableHeaderCell>Product</TableHeaderCell>
+          <TableHeaderCell>Units Sold</TableHeaderCell>
+          <TableHeaderCell>Revenue</TableHeaderCell>
+          <TableHeaderCell>Profit Margin</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
         {tableData.map((item) => (
-          <TableRow key={item.name}>
-            <TableCell>{item.name}</TableCell>
+          <TableRow key={item.product}>
+            <TableCell>{item.product}</TableCell>
             <TableCell>
-              <Text>{item.Role}</Text>
+              <Text>{item.units}</Text>
             </TableCell>
             <TableCell>
-              <Text>{item.departement}</Text>
+              <Text>{item.Revenue}</Text>
             </TableCell>
             <TableCell>
-              <Badge color="emerald" icon={StatusOnlineIcon}>
-                {item.status}
+              <Badge color="emerald" icon={ArrowUpIcon}>
+                {item.profit}
               </Badge>
             </TableCell>
           </TableRow>

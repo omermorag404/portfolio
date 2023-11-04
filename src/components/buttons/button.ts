@@ -21,37 +21,37 @@ const buttonVariant: {
   [key in "primary" | "secondary" | "tertiary"]: ButtonStyle;
 } = {
   primary: {
-    backgroundColor: colors.lightBlue,
+    backgroundColor: colors.blue100,
     hover: {
-      backgroundColor: colors.blue,
+      backgroundColor: colors.blue200,
       color: colors.white,
     },
     disabled: {
-      backgroundColor: colors.grey,
-      color: colors.darkGrey,
+      backgroundColor: colors.gray200,
+      color: colors.gray300,
     },
     color: colors.white,
-    borderColor: colors.action,
+    borderColor: colors.blue100,
     fontSize: textSize.sm,
   },
   secondary: {
-    backgroundColor: colors.midBlue,
-    color: colors.lightBlue,
-    borderColor: colors.lightBlue,
+    backgroundColor: colors.blue300,
+    color: colors.blue100,
+    borderColor: colors.blue100,
     fontSize: textSize.sm,
     hover: {
-      backgroundColor: colors.lightBlue,
+      backgroundColor: colors.blue100,
       color: colors.white,
     },
   },
   tertiary: {
-    backgroundColor: colors.darkestBlue,
+    backgroundColor: colors.blue400,
     hover: {
-      backgroundColor: colors.darkestBlue,
-      color: colors.green,
+      backgroundColor: colors.blue400,
+      color: colors.green100,
     },
-    color: colors.lightBlue,
-    borderColor: colors.darkestBlue,
+    color: colors.blue100,
+    borderColor: colors.blue400,
     fontSize: textSize.sm,
   },
 };

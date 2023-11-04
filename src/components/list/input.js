@@ -15,7 +15,7 @@ const Form = (props) => {
             React.createElement("form", { onSubmit: handleSubmit, style: { display: "flex", flexDirection: "column", gap: spacing.m } },
                 React.createElement(Input, { sx: {
                         width: "300px",
-                        color: colors.text,
+                        color: colors.purple100,
                     }, value: name, spellCheck: "true", placeholder: "Write item", onChange: (event) => {
                         setName(event.target.value);
                     } }),

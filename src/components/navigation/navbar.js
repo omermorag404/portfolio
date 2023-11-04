@@ -10,6 +10,7 @@ import spacing from "../styles/spacing";
 import "../styles/style.css";
 import { H4 } from "../styles/typography";
 import Burger from "./burger";
+import shadows from "../styles/shadows";
 
 function NavBar() {
   const Logo = styled.div`
@@ -19,7 +20,7 @@ function NavBar() {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: ${colors.darkestBlue};
+    background-color: ${colors.blue400};
 
     li {
       list-style-type: none;
@@ -31,9 +32,10 @@ function NavBar() {
       className="nav"
       style={{
         width: "100%",
-        backgroundColor: colors.darkestBlue,
+        backgroundColor: colors.blue400,
         alignItems: "center",
         zIndex: 999,
+        boxShadow: shadows.bottomHigh,
       }}
     >
       <Flex
@@ -50,18 +52,18 @@ function NavBar() {
                 fontWeight: isActive ? "bold" : "",
                 alignItems: "center",
                 alignContent: "center",
-                color: isActive ? colors.purple : "black",
+                color: isActive ? colors.purple100 : "black",
                 padding: isActive ? 8 : 8,
                 borderBottom: isActive
-                  ? `2 solid ${colors.darkestBlue}`
+                  ? `2 solid ${colors.blue400}`
                   : colors.darkestBlue,
-                backgroundColor: isActive ? colors.darkestBlue : "",
+                backgroundColor: isActive ? colors.blue400 : "",
                 textDecoration: isActive ? "none" : "none",
               };
             }}
           >
             {" "}
-            <H4 style={{ color: colors.purple }}>🚀 My React projects</H4>
+            <H4 style={{ color: colors.purple300 }}>🚀 My React projects</H4>
           </NavLink>
         </Logo>
         <div>
@@ -75,7 +77,7 @@ function NavBar() {
                       fontWeight: isActive ? "bold" : "",
                       alignItems: "center",
                       alignContent: "center",
-                      color: isActive ? colors.lightBlue : colors.lightBlue,
+                      color: isActive ? colors.blue100 : colors.blue100,
                       padding: isActive ? 8 : 8,
                       borderBottom: isActive
                         ? `2 solid ${colors.action}`
@@ -96,11 +98,11 @@ function NavBar() {
                       fontWeight: isActive ? "bold" : "",
                       alignItems: "center",
                       alignContent: "center",
-                      color: isActive ? colors.lightBlue : colors.lightBlue,
+                      color: isActive ? colors.blue100 : colors.blue100,
                       padding: isActive ? 8 : 8,
                       backgroundColor: isActive
-                        ? colors.darkestBlue
-                        : colors.darkestBlue,
+                        ? colors.blue400
+                        : colors.blue400,
                       textDecoration: isActive ? "underline" : "none",
                     };
                   }}

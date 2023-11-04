@@ -5,7 +5,7 @@ import { Flex } from "../components/styles/flex";
 import colors from "../components/styles/colors";
 export const About = () => {
   return (
-    <div style={{ margin: "0 5% 5% 5%", justifyContent: "center" }}>
+    <Flex style={{ margin: "0 5% 5% 5%", justifyContent: "center" }}>
       <Flex
         flexDirection="column"
         gap={spacing.lg}
@@ -25,16 +25,14 @@ export const About = () => {
 
         <div>
           {" "}
-          <H4 style={{ textAlign: "left", color: colors.purple }}>
-            Learning the Ropes: Apps to DIY
-          </H4>
+          <H4 style={{ textAlign: "left" }}>Learning the Ropes: Apps to DIY</H4>
           <P>
             Projects Started my code journey using "Mimo" and "Grasshopper,"
             then hopped on the Udemy train. But real talk, just learning without
             doing felt kinda meh. So, I hit up the Front-end squad for help—big
             shoutout to{" "}
             <a
-              style={{ color: colors.green }}
+              style={{ color: colors.green100 }}
               href="https://www.linkedin.com/in/amit-kastel-3a54b3133/"
               target="blank"
             >
@@ -46,7 +44,7 @@ export const About = () => {
           </P>{" "}
         </div>
         <div>
-          <H4 style={{ textAlign: "left", color: colors.purple }}>
+          <H4 style={{ textAlign: "left" }}>
             Curiosity Strikes: More Projects, More Fun
           </H4>
           <P>
@@ -58,7 +56,7 @@ export const About = () => {
           </P>
         </div>
         <div>
-          <H4 style={{ textAlign: "left", color: colors.purple }}>
+          <H4 style={{ textAlign: "left" }}>
             Design Hack: Reusing Components and Getting Creative
           </H4>
           <P>
@@ -68,7 +66,7 @@ export const About = () => {
           </P>
         </div>
         <div>
-          <H4 style={{ textAlign: "left", color: colors.purple }}>
+          <H4 style={{ textAlign: "left" }}>
             Cracking the Code Jargon: Speaking Engineer-ish
           </H4>
           <P>
@@ -78,9 +76,7 @@ export const About = () => {
           </P>
         </div>
         <div>
-          <H4 style={{ textAlign: "left", color: colors.purple }}>
-            Next Up: Keep on Keeping
-          </H4>
+          <H4 style={{ textAlign: "left" }}>Next Up: Keep on Keeping</H4>
           <P>
             On From here, it's all about practice and learning. The transition
             from designer to coder was a wild ride. Excited for the challenges
@@ -88,6 +84,6 @@ export const About = () => {
           </P>
         </div>
       </Flex>
-    </div>
+    </Flex>
   );
 };

@@ -4,24 +4,24 @@ export const cardsData = [
         title: "Product Designer",
         label: "Project",
         projectName: "Storybook redesign",
-        cardColor: colors.action,
+        cardColor: colors.gloatAction,
     },
     {
         title: "Product Manager",
         label: "Position",
         projectName: "New Talent Marketplace",
-        cardColor: colors.yellow,
+        cardColor: colors.gloatYellow,
     },
     {
         title: "Product Designer",
         label: "Project",
         projectName: "New Talent Marketplace",
-        cardColor: colors.yellow,
+        cardColor: colors.gloatYellow,
     },
     {
         title: "Product Designer",
         label: "Project",
         projectName: "New Talent Marketplace",
-        cardColor: colors.yellow,
+        cardColor: colors.gloatYellow,
     },
 ];

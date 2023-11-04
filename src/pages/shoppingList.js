@@ -31,8 +31,8 @@ const ShoppingList = (props) => {
         justifyContent={"flexStart"}
         alignItems={"center"}
       >
-        <H3 color={colors.text}>Hello,{name}</H3>
-        <H4 color={colors.text}>Welcome to shopping list</H4>
+        <H3 color={colors.purple100}>Hello,{name}</H3>
+        <H4 color={colors.purple100}>Welcome to shopping list</H4>
         <Flex
           style={{
             gap: spacing.xs,
@@ -83,7 +83,7 @@ const ShoppingList = (props) => {
                   style={{
                     width: "315px",
                     border: "1px solid",
-                    borderColor: colors.text,
+                    borderColor: colors.purple100,
                     borderRadius: "4px",
                     padding: spacing.m,
                     backgroundColor: colors.midBlue,

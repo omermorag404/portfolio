@@ -38,17 +38,17 @@ function Card({ cardsData }: { cardsData: CardData }) {
   const CardTitle = styled.h3`
     font-family: Roboto, sans-serif;
     font-size: ${textSize.lg};
-    color: ${colors.darkGrey};
+    color: ${colors.gray300};
   `;
   const CardContent = styled.p`
     font-size: ${textSize.sm};
     font-family: Roboto, sans-serif;
-    color: ${colors.darkGrey};
+    color: ${colors.gray300};
   `;
   const CardLabel = styled.p`
     font-size: ${textSize.xs};
     font-family: Roboto, sans-serif;
-    color: ${colors.darkGrey};
+    color: ${colors.gray300};
   `;
   return (
     <div
@@ -80,7 +80,7 @@ function Card({ cardsData }: { cardsData: CardData }) {
         <div
           style={{
             backgroundColor: colors.white,
-            color: colors.darkGrey,
+            color: colors.gray300,
             padding: "8px",
             position: "absolute",
             left: spacing.m,
@@ -114,10 +114,10 @@ function Card({ cardsData }: { cardsData: CardData }) {
           </Flex>
           <Flex alignItems={"center"} gap={spacing.m}>
             <Avatar />
-            <CardLabel color={colors.darkGrey}>User name</CardLabel>
+            <CardLabel color={colors.gray300}>User name</CardLabel>
           </Flex>
           <Flex alignItems={"center"} gap={spacing.s}>
-            <AutoAwesome style={{ color: colors.yellow }} />
+            <AutoAwesome style={{ color: colors.gloatYellow }} />
             <CardContent>
               Gain skills important to your organization{" "}
             </CardContent>

@@ -9,12 +9,12 @@ const valueFormatter = function (number) {
 export const AreaChartChart = () => {
   return (
     <Card>
-      <Title>Newsletter revenue over time (USD)</Title>
+      <Title>Sales Over Time:</Title>
       <AreaChart
-        className="max-w-xxs mx-auto"
+        className=" mx-auto"
         data={areaChartData}
         index="date"
-        categories={["SemiAnalysis", "The Pragmatic Engineer"]}
+        categories={["ActualSales", "Target Sales"]}
         colors={["indigo", "cyan"]}
         valueFormatter={valueFormatter}
       />

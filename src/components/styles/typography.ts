@@ -8,7 +8,7 @@ export type Title = {
   fontFamily?: string;
 };
 export const H1 = styled.h1`
-  color: ${(props: any) => props.color || colors.text};
+  color: ${(props: any) => props.color || colors.purple300};
   font-size: ${(props: Title) => props.textSize || textSize.xxl};
   font-family: ${(props: Title) => props.fontFamily || "Source Code Pro"};
   text-align: center;
@@ -35,21 +35,21 @@ export const H6 = styled(H1)`
 `;
 export const P = styled.p<Title | HTMLParagraphElement>`
   font-size: ${(props: Title) => props.textSize || textSize.sm};
-  color: ${(props: Title) => props.color || colors.text};
+  color: ${(props: Title) => props.color || colors.purple100};
   font-family: ${(props: Title) => props.fontFamily || "Source Code Pro"};
   margin: 0;
   word-break: "break-all";
 `;
 export const Pbold = styled(P)`
   font-weight: 600;
-  color: ${(props: any) => props.color || colors.text};
+  color: ${(props: any) => props.color || colors.purple100};
 `;
 export const Crossed = styled(P)`
   font-weight: 300;
-  color: ${(props: any) => props.color || colors.text};
+  color: ${(props: any) => props.color || colors.purple100};
   text-decoration: line-through;
 `;
 export const Label = styled(P)`
 font-size=${textSize.xs};
-color:${colors.text}
+color:${colors.purple100}
 `;
