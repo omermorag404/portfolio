@@ -1,31 +1,28 @@
 import {
-  Card,
   Grid,
   Tab,
   TabGroup,
   TabList,
   TabPanel,
   TabPanels,
-  Text,
-  Title,
 } from "@tremor/react";
 import React from "react";
+import { AreaChartChart } from "../components/dashboard/areachart";
 import { kpiData } from "../components/dashboard/dataDashboard";
 import { KpiCard } from "../components/dashboard/kpicard";
+import { TableChart } from "../components/dashboard/table";
 import "../components/styles/style.css";
 import "../components/styles/tailwind.css";
-export const Charts = () => {
+import { H3 } from "../components/styles/typography";
+export const Dashboard = () => {
   return (
     <div>
-      <main className="p-12">
-        <Title>Dashboard</Title>
-        <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</Text>
-
+      <H3>My Dashboard</H3>
+      <main className="p-4">
         <TabGroup className="mt-6">
           <TabList>
             <Tab>Overview</Tab>
             <Tab>Detail</Tab>
-            <Tab>Settings</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
@@ -35,27 +32,17 @@ export const Charts = () => {
                 })}
               </Grid>
               <div className="mt-6">
-                <Card>
-                  <div className="h-80" />
-                </Card>
+                <AreaChartChart />
               </div>
             </TabPanel>
             <TabPanel>
               <div className="mt-6">
-                <Card>
-                  <div className="h-96" />
-                </Card>
+                <TableChart />
               </div>
             </TabPanel>
           </TabPanels>
         </TabGroup>
       </main>
-      <div>
-        {kpiData.map((item, index) => {
-          // eslint-disable-next-line react/jsx-key
-          return <KpiCard kpiData={item} />;
-        })}
-      </div>
     </div>
   );
 };

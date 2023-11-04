@@ -3,7 +3,7 @@ import { Card, Text, Metric, Flex, ProgressBar } from "@tremor/react";
 import { kpiData } from "./dataDashboard";
 
 export const KpiCard = ({ kpiData }) => (
-  <Card className="max-w-xs mx-auto" decoration="top" decorationColor="indigo">
+  <Card className="max-w-xs mx-auto" decorationColor="indigo">
     <Text>{kpiData.text}</Text>
     <Metric>{kpiData.amount}</Metric>
     <Flex className="mt-4">
