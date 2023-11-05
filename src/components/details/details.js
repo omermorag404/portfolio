@@ -4,8 +4,8 @@ import { H5 } from "../styles/typography";
 import { PackageChip } from "./chip";
 import { login } from "./detailsData";
 
-export const ProjectDetails = (props) => {
-  const project = props;
+export function ProjectDetails({ props }) {
+  const { login, list } = props;
   return (
     <Flex>
       <Flex>
@@ -15,12 +15,11 @@ export const ProjectDetails = (props) => {
       <Flex>
         <H5>npm packages used</H5>
         <Flex>
-          {project.map((item, index) => {
-            // eslint-disable-next-line react/jsx-key
+          {this.props.map((item, index) => {
             return <PackageChip props={item} />;
           })}
         </Flex>
       </Flex>
     </Flex>
   );
-};
+}

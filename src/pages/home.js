@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import { animated, easings, useSpring } from "@react-spring/web";
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
@@ -8,6 +9,7 @@ import { Flex } from "../components/styles/flex";
 import spacing from "../components/styles/spacing";
 import { H5 } from "../components/styles/typography";
 import styled from "styled-components";
+import rocket from "../components/img/rocket.png";
 
 export const Home = () => {
   const springs = useSpring({
@@ -35,7 +37,12 @@ export const Home = () => {
   }, []);
   return (
     <Flex flexDirection={"column"} gap={spacing.xxxl}>
-      <Flex flexDirection={"column"} gap={spacing.xxl} alignItems={"center"}>
+      <Flex flexDirection={"column"} gap={spacing.md} alignItems={"center"}>
+        <img
+          src={rocket}
+          alt="React Image"
+          style={{ height: "180px", margin: "24px" }}
+        />
         <Animation>
           <TypewriterComponent
             options={{
