@@ -22,6 +22,7 @@ export const Home = () => {
   });
 
   const Animation = styled.h5`
+    text-align: center;
     font-size: 40px;
     color: ${colors.purple100};
     @media (max-width: 767px) {
@@ -49,7 +50,11 @@ export const Home = () => {
               autoStart: true,
               loop: true,
               delay: 268,
-              strings: ["I learn React.js", "It's crazy, right?"],
+              strings: [
+                "Hello there!",
+                "My name is Omer",
+                "Checkout my React.js",
+              ],
             }}
           />
         </Animation>

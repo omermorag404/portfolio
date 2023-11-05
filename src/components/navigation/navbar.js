@@ -1,4 +1,4 @@
-import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import { React } from "react";
 import MediaQuery from "react-responsive";
 import { NavLink } from "react-router-dom";
@@ -122,7 +122,7 @@ function NavBar() {
                   </a>
                   <a href="https://www.facebook.com/morag.omer" target="blank">
                     <CTA variant="tertiary" buttonSize="sBmd">
-                      <Facebook />
+                      <GitHub />
                     </CTA>
                   </a>
                   <a href="https://www.instagram.com/moragos/" target="blank">

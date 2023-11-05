@@ -1,16 +1,14 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { React, useState } from "react";
-import logo from "../logo.svg";
 import { Alert, Input, Snackbar } from "@mui/material";
 import { useFormik } from "formik";
+import { React, useState } from "react";
 import * as Yup from "yup";
 import { CTA } from "../components/buttons/button";
 import colors from "../components/styles/colors";
+import { Flex } from "../components/styles/flex";
 import spacing from "../components/styles/spacing";
 import { H2, P } from "../components/styles/typography";
-import { Flex } from "../components/styles/flex";
-import { ProjectDetails } from "../components/details/details";
-import { loginData } from "../components/details/detailsData";
+import logo from "../logo.svg";
 
 const checkUser = (values) => {
   return new Promise((resolve, reject) => {
@@ -114,7 +112,9 @@ export const Login = (props) => {
               color={formik.errors.username ? "error" : "primary"}
             />
             {formik.errors.username ? (
-              <div style={{ color: colors.red }}>{formik.errors.username}</div>
+              <div style={{ color: colors.red100 }}>
+                {formik.errors.username}
+              </div>
             ) : null}
           </section>
           <section
@@ -138,7 +138,9 @@ export const Login = (props) => {
               style={{ width: 315, color: colors.purple100 }}
             />
             {formik.errors.password ? (
-              <div style={{ color: colors.red }}>{formik.errors.password}</div>
+              <div style={{ color: colors.red100 }}>
+                {formik.errors.password}
+              </div>
             ) : null}
           </section>
           <CTA

@@ -18,7 +18,7 @@ const ProjectStyledCard = styled(Flex)`
 
   &:hover {
     transform: scale(1.02);
-    border: solid 1px ${colors.green100};
+    border: solid 1px ${colors.purple300};
     box-shadow: ${shadows.medium};
   }
 `;

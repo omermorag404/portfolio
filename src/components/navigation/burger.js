@@ -5,6 +5,7 @@ import {
   Facebook,
   Instagram,
   LinkedIn,
+  GitHub,
 } from "@mui/icons-material";
 import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -136,9 +137,9 @@ const Burger = () => {
               <LinkedIn />
             </CTA>{" "}
           </a>
-          <a href="https://www.facebook.com/morag.omer" target="blank">
+          <a href="https://github.com/omermorag404" target="blank">
             <CTA variant="tertiary" buttonSize="sBmd">
-              <Facebook />
+              <GitHub />
             </CTA>
           </a>
           <a href="https://www.instagram.com/moragos/" target="blank">
