@@ -19,8 +19,10 @@ export default {
     green100: "#73DACA",
     // Red
     red100: "#EB7188",
+    // Orange
+    orange100: "#D8B172",
     //Gloat
-    blueGloat: "#1A1B25",
+    gloatblue: "#1A1B25",
     gloatAction: "#0351AB",
     gloatDarkAction: "#00397B",
     gloatYellow: "#FFD43C",
