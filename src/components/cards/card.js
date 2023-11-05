@@ -20,183 +20,106 @@ import spacing from "../styles/spacing";
 import "../styles/style.css";
 // Card color
 const cardColor = {
-  Project: {
-    borderBottom: `8px solid ${colors.sky}`,
-  },
-  Position: {
-    borderBottom: `8px solid ${colors.coral}`,
-  },
+    Project: {
+        borderBottom: `8px solid ${colors.sky}`,
+    },
+    Position: {
+        borderBottom: `8px solid ${colors.coral}`,
+    },
 };
 //  Card cover
 const imgs = [card1, card2, card3, card4, card5, card6];
 function Card({ cardsData }) {
-  var _a;
-  const CardTitle = styled.h3`
+    var _a;
+    const CardTitle = styled.h3 `
     font-family: Roboto, sans-serif;
     font-size: ${textSize.lg};
     color: ${colors.gray300};
   `;
-  const CardContent = styled.p`
+    const CardContent = styled.p `
     font-size: ${textSize.sm};
     font-family: Roboto, sans-serif;
     color: ${colors.gray300};
   `;
-  const CardLabel = styled.p`
+    const CardLabel = styled.p `
     font-size: ${textSize.xs};
     font-family: Roboto, sans-serif;
     color: ${colors.gray300};
   `;
-  return React.createElement(
-    "div",
-    {
-      className: "card",
-      style: {
-        backgroundColor: colors.white,
-        maxWidth: 360,
-        minWidth: 360,
-        maxHeight: 470,
-        height: 508,
-        borderRadius: 16,
-        border: "1px solid #E0E0E0",
-        overflow: "hidden",
-        marginRight: 0,
-        position: "relative",
-      },
-    },
-    React.createElement(
-      "div",
-      {
-        style: {
-          borderBottom:
-            (_a = cardColor[cardsData.label]) === null || _a === void 0
-              ? void 0
-              : _a.borderBottom,
-          marginRight: "auto",
-          maxWidth: 360,
-          position: "relative",
-          flex: 1,
-          overflow: "hidden",
-          height: 150,
-        },
-      },
-      React.createElement(
-        "div",
-        {
-          style: {
+    return (React.createElement("div", { className: "card", style: {
             backgroundColor: colors.white,
-            color: colors.gray300,
-            padding: "8px",
-            position: "absolute",
-            left: spacing.m,
-            top: spacing.m,
-            borderRadius: 4,
-            fontFamily: "Roboto, sans-serif;",
-          },
-        },
-        cardsData.label
-      ),
-      React.createElement("img", {
-        src: imgs[Math.floor(Math.random() * imgs.length)],
-        width: "100%",
-        style: {
-          borderRadius: "16px",
-          display: "block",
-        },
-      })
-    ),
-    React.createElement(
-      "div",
-      { style: { padding: spacing.s, flex: 2 } },
-      React.createElement(
-        Flex,
-        { flexDirection: "column", alignItems: "flex-start", gap: spacing.m },
-        React.createElement(CardTitle, null, cardsData.title),
-        React.createElement(
-          Flex,
-          { gap: spacing.m, alignItems: "center" },
-          React.createElement(
-            CardLabel,
-            { style: { fontSize: 14 } },
-            cardsData.projectName
-          ),
-          React.createElement(
-            Flex,
-            { alignItems: "center", gap: spacing.xs },
-            React.createElement(Timer, null),
-            React.createElement(CardLabel, null, "X hours per week")
-          )
-        ),
-        React.createElement(
-          Flex,
-          { alignItems: "center", gap: spacing.m },
-          React.createElement(Avatar, null),
-          React.createElement(CardLabel, { color: colors.gray300 }, "User name")
-        ),
-        React.createElement(
-          Flex,
-          { alignItems: "center", gap: spacing.s },
-          React.createElement(AutoAwesome, {
-            style: { color: colors.gloatYellow },
-          }),
-          React.createElement(
-            CardContent,
-            null,
-            "Gain skills important to your organization",
-            " "
-          )
-        )
-      )
-    ),
-    React.createElement(
-      "div",
-      {
-        style: {
-          padding: spacing.s,
-          position: "absolute",
-          bottom: 0,
-          right: 0,
-          flex: 1,
-          width: "100%",
-          borderTop: "1px solid #E0E0E0",
-        },
-      },
-      React.createElement(
-        Flex,
-        { gap: spacing.s, justifyContent: "space-between" },
-        React.createElement(
-          Flex,
-          { gap: spacing.s },
-          " ",
-          React.createElement(
-            CardButton,
-            { variant: "tertiary", buttonSize: "sBlg" },
-            React.createElement(ShareIcon, null),
-            " "
-          ),
-          React.createElement(
-            CardButton,
-            { variant: "tertiary", buttonSize: "sBlg" },
-            React.createElement(FavoriteBorderOutlinedIcon, null)
-          )
-        ),
-        React.createElement(
-          Flex,
-          { gap: spacing.s },
-          " ",
-          React.createElement(
-            CardButton,
-            { variant: "secondary", buttonSize: "sBlg" },
-            React.createElement(ThumbDown, null),
-            " "
-          ),
-          React.createElement(
-            CardButton,
-            { variant: "primary", buttonSize: "sBlg" },
-            React.createElement(ThumbUp, null)
-          )
-        )
-      )
-    )
-  );
+            maxWidth: 360,
+            minWidth: 360,
+            maxHeight: 470,
+            height: 508,
+            borderRadius: 16,
+            border: "1px solid #E0E0E0",
+            overflow: "hidden",
+            marginRight: 0,
+            position: "relative",
+        } },
+        React.createElement("div", { style: {
+                borderBottom: (_a = cardColor[cardsData.label]) === null || _a === void 0 ? void 0 : _a.borderBottom,
+                marginRight: "auto",
+                maxWidth: 360,
+                position: "relative",
+                flex: 1,
+                overflow: "hidden",
+                height: 150,
+            } },
+            React.createElement("div", { style: {
+                    backgroundColor: colors.white,
+                    color: colors.gray300,
+                    padding: "8px",
+                    position: "absolute",
+                    left: spacing.m,
+                    top: spacing.m,
+                    borderRadius: 4,
+                    fontFamily: "Roboto, sans-serif;",
+                } }, cardsData.label),
+            React.createElement("img", { src: imgs[Math.floor(Math.random() * imgs.length)], width: "100%", style: {
+                    borderRadius: "16px",
+                    display: "block",
+                } })),
+        React.createElement("div", { style: { padding: spacing.s, flex: 2 } },
+            React.createElement(Flex, { flexDirection: "column", alignItems: "flex-start", gap: spacing.m },
+                React.createElement(CardTitle, null, cardsData.title),
+                React.createElement(Flex, { gap: spacing.m, alignItems: "center" },
+                    React.createElement(CardLabel, { style: { fontSize: 14 } }, cardsData.projectName),
+                    React.createElement(Flex, { alignItems: "center", gap: spacing.xs },
+                        React.createElement(Timer, null),
+                        React.createElement(CardLabel, null, "X hours per week"))),
+                React.createElement(Flex, { alignItems: "center", gap: spacing.m },
+                    React.createElement(Avatar, null),
+                    React.createElement(CardLabel, { color: colors.gray300 }, "User name")),
+                React.createElement(Flex, { alignItems: "center", gap: spacing.s },
+                    React.createElement(AutoAwesome, { style: { color: colors.gloatYellow } }),
+                    React.createElement(CardContent, null,
+                        "Gain skills important to your organization",
+                        " ")))),
+        React.createElement("div", { style: {
+                padding: spacing.s,
+                position: "absolute",
+                bottom: 0,
+                right: 0,
+                flex: 1,
+                width: "100%",
+                borderTop: "1px solid #E0E0E0",
+            } },
+            React.createElement(Flex, { gap: spacing.s, justifyContent: "space-between" },
+                React.createElement(Flex, { gap: spacing.s },
+                    " ",
+                    React.createElement(CardButton, { variant: "tertiary", buttonSize: "sBlg" },
+                        React.createElement(ShareIcon, null),
+                        " "),
+                    React.createElement(CardButton, { variant: "tertiary", buttonSize: "sBlg" },
+                        React.createElement(FavoriteBorderOutlinedIcon, null))),
+                React.createElement(Flex, { gap: spacing.s },
+                    " ",
+                    React.createElement(CardButton, { variant: "secondary", buttonSize: "sBlg" },
+                        React.createElement(ThumbDown, null),
+                        " "),
+                    React.createElement(CardButton, { variant: "primary", buttonSize: "sBlg" },
+                        React.createElement(ThumbUp, null)))))));
 }
 export default Card;
