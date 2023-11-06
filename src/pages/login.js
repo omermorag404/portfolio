@@ -9,6 +9,7 @@ import { Flex } from "../components/styles/flex";
 import spacing from "../components/styles/spacing";
 import { H2, P } from "../components/styles/typography";
 import logo from "../logo.svg";
+import { LoginDetails } from "../components/details/details";
 
 const checkUser = (values) => {
   return new Promise((resolve, reject) => {
@@ -69,6 +70,7 @@ export const Login = (props) => {
         style={{
           flexDirection: "column",
           gap: spacing.lg,
+          marginBottom: "40px",
         }}
       >
         <Flex flexDirection={"column"} alignItems={"center"} gap={spacing.s}>
@@ -186,6 +188,18 @@ export const Login = (props) => {
           </Snackbar>
         </div>
       </Flex>
+      <div
+        style={{
+          backgroundColor: colors.blue300,
+          position: "fixed",
+          bottom: "0px",
+          zIndex: 10,
+          width: "100%",
+        }}
+      >
+        <hr />
+        <LoginDetails />
+      </div>
     </div>
   );
 };

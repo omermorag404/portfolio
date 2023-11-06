@@ -7,6 +7,7 @@ import colors from "../components/styles/colors";
 import spacing from "../components/styles/spacing";
 import { H3, H4, P, Pbold } from "../components/styles/typography.js";
 import { Flex } from "../components/styles/flex";
+import { ListDetails } from "../components/details/details";
 
 const ShoppingList = (props) => {
   const [items, setItems] = React.useState([
@@ -31,8 +32,8 @@ const ShoppingList = (props) => {
         justifyContent={"flexStart"}
         alignItems={"center"}
       >
-        <H3 color={colors.purple100}>Hello,{name}</H3>
-        <H4 color={colors.purple100}>Welcome to shopping list</H4>
+        <H3 color={colors.purple200}>Shopping List</H3>
+
         <Flex
           style={{
             gap: spacing.xs,
@@ -131,6 +132,18 @@ const ShoppingList = (props) => {
             );
           })}
         </Flex>
+      </div>
+      <div
+        style={{
+          backgroundColor: colors.blue300,
+          position: "fixed",
+          bottom: "0px",
+          zIndex: 10,
+          width: "100%",
+        }}
+      >
+        <hr />
+        <ListDetails />
       </div>
     </div>
   );

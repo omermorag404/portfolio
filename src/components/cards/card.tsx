@@ -55,8 +55,8 @@ function Card({ cardsData }: { cardsData: CardData }) {
       className="card"
       style={{
         backgroundColor: colors.white,
-        maxWidth: 360,
-        minWidth: 360,
+        maxWidth: 315,
+        minWidth: 315,
         maxHeight: 470,
         height: 508,
         borderRadius: 16,
