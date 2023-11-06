@@ -1,9 +1,9 @@
 import { Input } from "@mui/material";
 import React from "react";
-import { Flex } from "../styles/flex";
 import { CTA } from "../buttons/button";
-import spacing from "../styles/spacing";
 import colors from "../styles/colors";
+import { Flex } from "../styles/flex";
+import spacing from "../styles/spacing";
 const Form = (props) => {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");

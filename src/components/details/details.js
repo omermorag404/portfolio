@@ -21,14 +21,14 @@ export const LoginDetails = () => {
       <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Packages I used</H4>
         <Flex gap={"16px"}>
-          <a href="http://www.google.com" target="blank">
+          <a href="https://www.npmjs.com/package/formik" target="blank">
             Formik
           </a>
-          <a href="http://www.google.com" target="blank">
+          <a href="https://www.npmjs.com/package/yup" target="blank">
             Yup
           </a>
-          <a href="http://www.google.com" target="blank">
-            Styled-Component
+          <a href="https://www.npmjs.com/package/@mui/material" target="blank">
+            @mui/material
           </a>
         </Flex>
       </Flex>
@@ -51,14 +51,17 @@ export const CardsDetails = () => {
       <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Packages I used</H4>
         <Flex gap={"16px"}>
-          <a href="http://www.google.com" target="blank">
-            Formik
+          <a
+            href="https://www.npmjs.com/package/@mui/icons-material"
+            target="blank"
+          >
+            @mui/icons-matirial
           </a>
-          <a href="http://www.google.com" target="blank">
-            Yup
-          </a>
-          <a href="http://www.google.com" target="blank">
-            Styled-Component
+          <a
+            href="https://www.npmjs.com/package/styled-components"
+            target="blank"
+          >
+            styled-components
           </a>
         </Flex>
       </Flex>
@@ -74,21 +77,17 @@ export const DashboardDetails = () => {
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
           <img src={js} alt="JavaScript" width={"24px"} height={"24px"} />
-          <img src={ts} alt="Typescript" width={"24px"} height={"24px"} />
           <img src={css} alt="CSS" width={"24px"} height={"24px"} />
         </Flex>
       </Flex>
       <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Packages I used</H4>
         <Flex gap={"16px"}>
-          <a href="http://www.google.com" target="blank">
-            Formik
+          <a href="https://www.npmjs.com/package/@tremor/react" target="blank">
+            tremor/react
           </a>
-          <a href="http://www.google.com" target="blank">
-            Yup
-          </a>
-          <a href="http://www.google.com" target="blank">
-            Styled-Component
+          <a href="https://www.npmjs.com/package/tailwindcss" target="blank">
+            tailwindcss
           </a>
         </Flex>
       </Flex>
@@ -111,14 +110,8 @@ export const ListDetails = () => {
       <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Packages I used</H4>
         <Flex gap={"16px"}>
-          <a href="http://www.google.com" target="blank">
-            Formik
-          </a>
-          <a href="http://www.google.com" target="blank">
-            Yup
-          </a>
-          <a href="http://www.google.com" target="blank">
-            Styled-Component
+          <a href="https://www.npmjs.com/package/@mui/material" target="blank">
+            @mui/material
           </a>
         </Flex>
       </Flex>

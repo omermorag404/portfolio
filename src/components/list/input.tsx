@@ -1,10 +1,9 @@
 import { Input } from "@mui/material";
 import React from "react";
-import { Flex } from "../styles/flex";
 import { CTA } from "../buttons/button";
-import spacing from "../styles/spacing";
 import colors from "../styles/colors";
-import { red } from "@mui/material/colors";
+import { Flex } from "../styles/flex";
+import spacing from "../styles/spacing";
 
 const Form = (props: any) => {
   const [name, setName] = React.useState("");
