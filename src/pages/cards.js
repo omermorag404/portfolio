@@ -14,9 +14,6 @@ export const Cards = () => {
         })),
         React.createElement("div", { style: {
                 backgroundColor: colors.blue300,
-                position: "fixed",
-                bottom: "0px",
-                zIndex: 10,
                 width: "100%",
             } },
             React.createElement("hr", null),
