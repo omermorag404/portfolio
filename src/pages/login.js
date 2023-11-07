@@ -191,9 +191,6 @@ export const Login = (props) => {
       <div
         style={{
           backgroundColor: colors.blue300,
-          position: "fixed",
-          bottom: "0px",
-          zIndex: 10,
           width: "100%",
         }}
       >

@@ -19,7 +19,7 @@ import colors from "../components/styles/colors";
 export const Dashboard = () => {
   return (
     <div>
-      <div style={{ margin: "auto", width: "95%", marginBottom: "180px" }}>
+      <div style={{ margin: "auto", width: "95%", marginBottom: "16px" }}>
         <H3>My Dashboard</H3>
         <div>
           <main className="p-8">
@@ -52,9 +52,6 @@ export const Dashboard = () => {
       <div
         style={{
           backgroundColor: colors.blue300,
-          position: "fixed",
-          bottom: "0px",
-          zIndex: 10,
           width: "100%",
         }}
       >
