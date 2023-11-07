@@ -1,7 +1,7 @@
 export const projectData = [
     {
         icon: "✅",
-        name: "To-do List",
+        name: "Todo List",
         date: "April 2023",
         link: `../list`,
     },

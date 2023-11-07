@@ -9,7 +9,7 @@ import { Dashboard } from "./pages/dashboard";
 import { Login } from "./pages/login";
 import { Cards } from "./pages/cards";
 import reportWebVitals from "./reportWebVitals";
-import { ShoppingList } from "./pages/shoppingList";
+import { Todo } from "./pages/todo";
 const router = createMemoryRouter([
     {
         path: "/",
@@ -41,7 +41,7 @@ const router = createMemoryRouter([
             },
             {
                 path: "list",
-                element: React.createElement(ShoppingList, null),
+                element: React.createElement(Todo, null),
             },
         ],
     },
