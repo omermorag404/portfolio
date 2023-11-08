@@ -3,8 +3,10 @@ import styled from "styled-components";
 import fruits from "../img/fruitshop.png";
 import { Flex } from "../styles/flex";
 import spacing from "../styles/spacing";
-import { P } from "../styles/typography";
+import { H3, P } from "../styles/typography";
 import { SearchData } from "./dataSearch";
+import colors from "../styles/colors";
+import textSize from "../sizes/textSize";
 
 const SearchBarFilter = () => {
   const Fruit = styled.div`
@@ -13,7 +15,7 @@ const SearchBarFilter = () => {
     gap: 16px;
     border: 1px solid white;
     border-radius: 4px;
-    padding: 8px;
+    padding: 8px 16px;
   `;
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,29 +40,46 @@ const SearchBarFilter = () => {
       flexDirection="column"
       alignItems="center"
       gap={spacing.xl}
+      padding="24px"
     >
-      <img src={fruits} alt="Fruits" width={"250px"} />
+      <Flex flexDirection="column" alignItems="center">
+        <img src={fruits} alt="Fruits" width={"200px"} />
+        <H3>Welcome to the local fruit store 👨🏻‍🌾</H3>
+      </Flex>
+
       <input
         type="text"
-        placeholder="Search..."
+        placeholder="Search fruit..."
         value={searchTerm}
         onChange={handleInputChange}
-        style={{ width: "320px", padding: "8px", borderRadius: "8px" }}
+        style={{
+          width: "320px",
+          padding: "8px",
+          borderRadius: "8px",
+          color: colors.gray300,
+          fontSize: textSize.sm,
+        }}
       />
-      <Flex
-        alignItems="flexStart"
-        flexDirection="row"
-        flexWrap={"wrap"}
-        gap={spacing.lg}
-        width="300px"
-      >
-        {filteredData.map((item) => (
-          <Fruit key={item.id}>
-            <P> {item.icon}</P>
-            <P> {item.name}</P>
-          </Fruit>
-        ))}
-      </Flex>
+      <div style={{ height: "265px", overflowY: "auto" }}>
+        <Flex
+          alignItems="flexStart"
+          flexDirection="row"
+          flexWrap={"wrap"}
+          gap={spacing.m}
+          width="300px"
+        >
+          {filteredData.length > 0 ? (
+            filteredData.map((item) => (
+              <Fruit key={item.id}>
+                <P>{item.icon}</P>
+                <P>{item.name}</P>
+              </Fruit>
+            ))
+          ) : (
+            <p>No items found</p>
+          )}
+        </Flex>
+      </div>
     </Flex>
   );
 };
