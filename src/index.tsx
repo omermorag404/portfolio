@@ -11,6 +11,7 @@ import { Login } from "./pages/login";
 import { Cards } from "./pages/cards";
 import reportWebVitals from "./reportWebVitals";
 import { Todo } from "./pages/todo";
+import { SearchBar } from "./pages/search";
 
 const router = createMemoryRouter([
   {
@@ -45,6 +46,10 @@ const router = createMemoryRouter([
       {
         path: "list",
         element: <Todo />,
+      },
+      {
+        path: "search",
+        element: <SearchBar />,
       },
     ],
   },
