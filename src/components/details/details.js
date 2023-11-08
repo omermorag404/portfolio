@@ -10,7 +10,7 @@ export const LoginDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
       <Flex flexDirection="column" gap={"16px"}>
-        <H4>Programing languages</H4>
+        <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
           <img src={js} alt="JavaScript" width={"24px"} height={"24px"} />
@@ -40,7 +40,7 @@ export const CardsDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
       <Flex flexDirection="column" gap={"16px"}>
-        <H4>Programing languages</H4>
+        <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
           <img src={js} alt="JavaScript" width={"24px"} height={"24px"} />
@@ -73,7 +73,7 @@ export const DashboardDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
       <Flex flexDirection="column" gap={"16px"}>
-        <H4>Programing languages</H4>
+        <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
           <img src={js} alt="JavaScript" width={"24px"} height={"24px"} />
@@ -99,7 +99,7 @@ export const ListDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
       <Flex flexDirection="column" gap={"16px"}>
-        <H4>Programing languages</H4>
+        <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
           <img src={js} alt="JavaScript" width={"24px"} height={"24px"} />
@@ -122,7 +122,7 @@ export const SearchDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
       <Flex flexDirection="column" gap={"16px"}>
-        <H4>Programing languages</H4>
+        <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
           <img src={js} alt="JavaScript" width={"24px"} height={"24px"} />
