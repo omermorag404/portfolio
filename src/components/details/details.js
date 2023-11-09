@@ -143,3 +143,28 @@ export const SearchDetails = () => {
     </Flex>
   );
 };
+export const QuizDetails = () => {
+  return (
+    <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
+      <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
+        <H4>Stack</H4>
+        <Flex gap={"16px"}>
+          <img src={react} alt="React" width={"24px"} height={"24px"} />
+          <img src={js} alt="JavaScript" width={"24px"} height={"24px"} />
+          <img src={css} alt="CSS" width={"24px"} height={"24px"} />
+        </Flex>
+      </Flex>
+      <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
+        <H4>Packages I used</H4>
+        <Flex gap={"16px"}>
+          <a
+            href="https://www.npmjs.com/package/styled-components"
+            target="blank"
+          >
+            styled-components
+          </a>
+        </Flex>
+      </Flex>
+    </Flex>
+  );
+};
