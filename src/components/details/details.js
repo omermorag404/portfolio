@@ -9,7 +9,7 @@ import "../styles/style.css";
 export const LoginDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
-      <Flex flexDirection="column" gap={"16px"}>
+      <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
@@ -39,7 +39,7 @@ export const LoginDetails = () => {
 export const CardsDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
-      <Flex flexDirection="column" gap={"16px"}>
+      <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
@@ -72,7 +72,7 @@ export const CardsDetails = () => {
 export const DashboardDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
-      <Flex flexDirection="column" gap={"16px"}>
+      <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
@@ -98,7 +98,7 @@ export const DashboardDetails = () => {
 export const ListDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
-      <Flex flexDirection="column" gap={"16px"}>
+      <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />
@@ -121,7 +121,7 @@ export const ListDetails = () => {
 export const SearchDetails = () => {
   return (
     <Flex style={{ margin: "40px" }} gap={"40px"} flexWrap={"wrap"}>
-      <Flex flexDirection="column" gap={"16px"}>
+      <Flex flexDirection="column" gap={"16px"} alignItems="flex-start">
         <H4>Stack</H4>
         <Flex gap={"16px"}>
           <img src={react} alt="React" width={"24px"} height={"24px"} />

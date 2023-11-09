@@ -7,7 +7,7 @@ import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { Dashboard } from "./pages/dashboard";
 import { Login } from "./pages/login";
-
+import { Quiz } from "./pages/quiz";
 import { Cards } from "./pages/cards";
 import reportWebVitals from "./reportWebVitals";
 import { Todo } from "./pages/todo";
@@ -50,6 +50,10 @@ const router = createMemoryRouter([
       {
         path: "search",
         element: <SearchBar />,
+      },
+      {
+        path: "quiz",
+        element: <Quiz />,
       },
     ],
   },

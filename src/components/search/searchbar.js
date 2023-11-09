@@ -68,7 +68,9 @@ const SearchBarFilter = () => {
           gap={spacing.m}
           width="300px"
         >
-          {filteredData.length > 0 ? (
+          {searchTerm === "" ? (
+            <P>What fruit are you looking for today?</P>
+          ) : filteredData.length > 0 ? (
             filteredData.map((item) => (
               <Fruit key={item.id}>
                 <P>{item.icon}</P>
@@ -76,7 +78,7 @@ const SearchBarFilter = () => {
               </Fruit>
             ))
           ) : (
-            <p>No items found</p>
+            <p>Sorry, we don't have this fruit</p>
           )}
         </Flex>
       </div>

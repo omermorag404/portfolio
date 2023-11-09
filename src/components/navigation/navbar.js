@@ -14,7 +14,7 @@ import shadows from "../styles/shadows";
 
 function NavBar() {
   const Logo = styled.div`
-    padding: 24px;
+    margin-left: 16px;
   `;
   const UL = styled.ul`
     display: flex;
@@ -24,7 +24,7 @@ function NavBar() {
 
     li {
       list-style-type: none;
-      padding: 24px;
+      padding: 16px;
     }
   `;
   return (

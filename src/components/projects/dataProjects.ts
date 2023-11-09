@@ -29,4 +29,10 @@ export const projectData = [
     date: "November 2023",
     link: "../search",
   },
+  {
+    icon: "❔",
+    name: "Quiz",
+    date: "November 2023",
+    link: "../quiz",
+  },
 ];

@@ -37,7 +37,7 @@ export const Home = () => {
     }, 500);
   }, []);
   return (
-    <Flex flexDirection={"column"} gap={spacing.xxxl}>
+    <Flex flexDirection={"column"} gap={spacing.xxxl} alignItems="center">
       <Flex flexDirection={"column"} gap={spacing.md} alignItems={"center"}>
         <img
           src={rocket}
@@ -70,6 +70,7 @@ export const Home = () => {
             flexWrap={"wrap"}
             justifyContent={"center"}
             padding="0 0  40px 0"
+            maxWidth="1200px"
           >
             {projectData.map((item, index) => {
               return <ProjectCard projectData={item} />;
