@@ -10,6 +10,7 @@ export const Quiz = () => {
         style={{
           backgroundColor: colors.blue300,
           width: "100%",
+          marginTop: "24px",
         }}
       >
         <hr />

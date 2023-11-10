@@ -10,9 +10,7 @@ import { Flex } from "../components/styles/flex";
 import { ListDetails } from "../components/details/details";
 
 const Todo = (props) => {
-  const [items, setItems] = React.useState([
-    { id: 1, name: "Test", checked: false },
-  ]);
+  const [items, setItems] = React.useState([]);
 
   const name = props.name;
 

@@ -15,8 +15,7 @@ const Form = (props) => {
             React.createElement("form", { onSubmit: handleSubmit, style: { display: "flex", flexDirection: "column", gap: spacing.m } },
                 React.createElement(Input, { sx: {
                         width: "300px",
-                        color: colors.purple100,
-                    }, value: name, spellCheck: "true", placeholder: "Write item", onChange: (event) => {
+                    }, inputProps: { style: { color: colors.purple100 } }, value: name, spellCheck: "true", placeholder: "Write item", onChange: (event) => {
                         setName(event.target.value);
                     } }),
                 React.createElement(Flex, { flexDirection: "row-reverse", justifyContent: "flexEnd", gap: 16 },

@@ -1,15 +1,14 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { animated, easings, useSpring } from "@react-spring/web";
 import React from "react";
+import styled from "styled-components";
 import TypewriterComponent from "typewriter-effect";
+import rocket from "../components/img/rocket.png";
 import { projectData } from "../components/projects/dataProjects";
 import ProjectCard from "../components/projects/project";
 import colors from "../components/styles/colors";
 import { Flex } from "../components/styles/flex";
 import spacing from "../components/styles/spacing";
-import { H5 } from "../components/styles/typography";
-import styled from "styled-components";
-import rocket from "../components/img/rocket.png";
 
 export const Home = () => {
   const springs = useSpring({

@@ -15,7 +15,7 @@ import { tableData } from "./dataDashboard";
 
 export const TableChart = () => (
   <Card>
-    <Title>List of Swiss Federal Councillours</Title>
+    <Title>Top Products/Services</Title>
     <Table className="max-w-xxl mx-auto mt-5">
       <TableHead>
         <TableRow>

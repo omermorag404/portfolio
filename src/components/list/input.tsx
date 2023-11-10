@@ -28,8 +28,8 @@ const Form = (props: any) => {
           <Input
             sx={{
               width: "300px",
-              color: colors.purple100,
             }}
+            inputProps={{ style: { color: colors.purple100 } }}
             value={name}
             spellCheck="true"
             placeholder="Write item"

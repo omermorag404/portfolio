@@ -8,7 +8,7 @@ import colors from "../components/styles/colors";
 import { Flex } from "../components/styles/flex";
 import spacing from "../components/styles/spacing";
 import { H2, P } from "../components/styles/typography";
-import logo from "../logo.svg";
+import logo from "../components/img/react.png";
 import { LoginDetails } from "../components/details/details";
 
 const checkUser = (values) => {
@@ -81,6 +81,9 @@ export const Login = (props) => {
           />
           <H2>Welcome</H2>
           <P>Please use your details to login</P>
+          <P style={{ color: colors.blue200 }}>
+            User name: user | Password: password
+          </P>
         </Flex>
         <form
           onSubmit={formik.handleSubmit}

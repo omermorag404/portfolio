@@ -1,8 +1,8 @@
 import React from "react";
-import spacing from "../components/styles/spacing";
-import { H1, P, H4 } from "../components/styles/typography";
+import MediaQuery from "react-responsive";
 import { Flex } from "../components/styles/flex";
-import colors from "../components/styles/colors";
+import spacing from "../components/styles/spacing";
+import { H1, H3, P } from "../components/styles/typography";
 export const About = () => {
   return (
     <Flex style={{ margin: "0 5% 5% 5%", justifyContent: "center" }}>
@@ -15,74 +15,63 @@ export const About = () => {
         padding="10px "
         margin="40px"
       >
-        <H1 color={colors.purple}>About this project</H1>
+        <MediaQuery minWidth={768}>
+          <H1>About this project</H1>
+        </MediaQuery>
+        <MediaQuery maxWidth={767}>
+          <H3>About this project</H3>
+        </MediaQuery>
         <P>
-          So, being a Product Designer means I'm tight with the Front-end team.
-          To make things smoother, I thought, "Why not learn some code?" You
-          know, get the lowdown on how those engineers whip up components, tweak
-          designs, and drop design wisdom.
+          Working as a Product Designer means working closely with the Front-end
+          team. To improve our workflow, I decided to learn how to code so that
+          I could better understand the way engineers build components, inspect
+          designs, and be receptive to design suggestions.
         </P>
-
-        <div>
+        <P>
+          Initially, I started learning to code using different applications
+          such as "Mimo" and "Grasshopper", and then continued with Udemy.
+          However, learning without practical application seemed a bit futile.
+          Therefore, I sought help from the Front-end team in my organization.
+          With the invaluable assistance of{" "}
+          <a
+            href="https://www.linkedin.com/in/amit-kastel-3a54b3133/"
+            target="blank"
+          >
+            Amit Kastel
+          </a>{" "}
+          and the other engineers, I embarked on my own React.js project. I
+          began with a simple shopping list, learning how to create various
+          React components that I could later use in composition.
+        </P>
+        <P>
+          However, my curiosity grew, and I wanted to explore and learn more.
+          Consequently, I started adding more projects and functionality to my
+          React app.
+        </P>
+        <P>
+          I acquired proficiency in using different hooks and styled-components.
+          I also experimented with various React libraries and services, such as
+          Formik, MUI, React Router, and Rechart. Once I built the main app in
+          React.js, I decided to convert some parts of it into TypeScript (which
+          was challenging but undoubtedly beneficial). This project and the
+          knowledge gained from it helped me plan my designs more effectively.
+        </P>
+        <P>
+          I learned how to base my design on existing code and reuse components.
+          Now I understand why there are multiple variants of buttons or even
+          texts.
+        </P>
+        <P>
+          However, the most significant value is that I can now understand
+          engineers better and determine when something is possible or expect a
+          more detailed explanation, rather than accepting statements like "this
+          will be difficult to build" or "that is impossible".
+        </P>
+        <P>
           {" "}
-          <H4 style={{ textAlign: "left" }}>Learning the Ropes: Apps to DIY</H4>
-          <P>
-            Projects Started my code journey using "Mimo" and "Grasshopper,"
-            then hopped on the Udemy train. But real talk, just learning without
-            doing felt kinda meh. So, I hit up the Front-end squad for help—big
-            shoutout to{" "}
-            <a
-              style={{ color: colors.green100 }}
-              href="https://www.linkedin.com/in/amit-kastel-3a54b3133/"
-              target="blank"
-            >
-              Amit Kastel
-            </a>{" "}
-            and the gang. Launched into my own React.js gig, kicking off with a
-            basic shopping list. Went on to cook up various React components
-            like a coding chef.
-          </P>{" "}
-        </div>
-        <div>
-          <H4 style={{ textAlign: "left" }}>
-            Curiosity Strikes: More Projects, More Fun
-          </H4>
-          <P>
-            Curiosity didn't stop there. Kept adding spice to my React app,
-            trying out different hooks and styled-components. Played around with
-            Formik, MUI, React Router, and Rechart. Even took the TypeScript
-            plunge—challenging but totally worth it. Now, I'm a champ at
-            planning designs.
-          </P>
-        </div>
-        <div>
-          <H4 style={{ textAlign: "left" }}>
-            Design Hack: Reusing Components and Getting Creative
-          </H4>
-          <P>
-            Figured out how to build my designs on existing code and reuse
-            components. Suddenly, all those different button versions made
-            sense.{" "}
-          </P>
-        </div>
-        <div>
-          <H4 style={{ textAlign: "left" }}>
-            Cracking the Code Jargon: Speaking Engineer-ish
-          </H4>
-          <P>
-            The real deal? Now I get what engineers are saying. No more nodding
-            along to "this is hard" or "that's impossible." I ask questions,
-            demand the deets.
-          </P>
-        </div>
-        <div>
-          <H4 style={{ textAlign: "left" }}>Next Up: Keep on Keeping</H4>
-          <P>
-            On From here, it's all about practice and learning. The transition
-            from designer to coder was a wild ride. Excited for the challenges
-            and growth ahead. Let's do this!
-          </P>
-        </div>
+          From this point forward, all that remains is continuous practice and
+          further learning.
+        </P>
       </Flex>
     </Flex>
   );

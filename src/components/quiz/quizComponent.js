@@ -6,9 +6,8 @@ import textSize from "../sizes/textSize";
 import colors from "../styles/colors";
 import { Flex } from "../styles/flex";
 import spacing from "../styles/spacing";
-import { H1, H3 } from "../styles/typography";
+import { H1, H3, P } from "../styles/typography";
 import { questions } from "./quizData";
-import quiz from "../img/quiz.png";
 
 export const QuizComponent = () => {
   const Answer = styled.button`
@@ -61,10 +60,17 @@ export const QuizComponent = () => {
   const Score = styled.div`
     display: flex;
     flex-direction: column;
-    gap: ${spacing.lg};
+    gap: ${spacing.m};
     border: 1px solid ${colors.orange100};
     padding: ${spacing.lg};
-    border-radius: 8px;
+
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 500px;
+    @media (max-width: 767px) {
+      width: 325px;
+    }
   `;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -91,15 +97,23 @@ export const QuizComponent = () => {
       <QuizLayout>
         <MediaQuery minWidth={768}>
           <H1>React.js Quize</H1>
-          {/* <img src={quiz} alt="quiz" width="400px" /> */}
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <H3>React.js Quize</H3>
-          {/* <img src={quiz} alt="quiz" /> */}
         </MediaQuery>
         {showScore ? (
           <Score>
-            <H1>👏🏻👏🏻👏🏻</H1>
+            {score === questions.length ? (
+              <Flex flexDirection="column" alignItems="center">
+                <H1>🏆</H1>
+                <P>You naild it! </P>
+              </Flex>
+            ) : (
+              <Flex flexDirection="column" alignItems="center">
+                <H1>👏🏻</H1>
+                <P>You naild it! </P>
+              </Flex>
+            )}
             <H3 color={colors.orange100}>
               You scored {score} out of {questions.length}
             </H3>
