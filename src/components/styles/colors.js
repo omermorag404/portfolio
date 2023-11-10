@@ -17,6 +17,7 @@ export default {
     purple500: "#9C7FD1",
     // Green
     green100: "#73DACA",
+    green200: "#6ECC",
     // Red
     red100: "#EB7188",
     // Orange

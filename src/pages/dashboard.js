@@ -20,7 +20,7 @@ export const Dashboard = () => {
   return (
     <div>
       <div style={{ margin: "auto", width: "95%", marginBottom: "16px" }}>
-        <H3>My Dashboard</H3>
+        <H3>Sales Dashboard</H3>
         <div>
           <main className="p-8">
             <TabGroup className="mt-6">

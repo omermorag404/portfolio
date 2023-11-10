@@ -23,8 +23,14 @@ const ProjectStyledCard = styled(Flex) `
   }
 `;
 function ProjectCard({ projectData }) {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
     return (React.createElement("div", null,
-        React.createElement(Link, { to: projectData.link, style: { textDecoration: "none" } },
+        React.createElement(Link, { to: projectData.link, style: { textDecoration: "none" }, onClick: scrollToTop },
             React.createElement(ProjectStyledCard, { gap: spacing.lg, style: { borderRadius: 16 } },
                 React.createElement(H2, null, projectData.icon),
                 React.createElement(Flex, { flexDirection: "column", gap: spacing.s, alignItems: "start", flexWrap: "wrap" },

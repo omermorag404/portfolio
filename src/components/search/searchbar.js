@@ -1,12 +1,11 @@
 import { React, useState } from "react";
 import styled from "styled-components";
-import fruits from "../img/fruitshop.png";
+import textSize from "../sizes/textSize";
+import colors from "../styles/colors";
 import { Flex } from "../styles/flex";
 import spacing from "../styles/spacing";
-import { H3, P } from "../styles/typography";
+import { H1, H3, P } from "../styles/typography";
 import { SearchData } from "./dataSearch";
-import colors from "../styles/colors";
-import textSize from "../sizes/textSize";
 
 const SearchBarFilter = () => {
   const Fruit = styled.div`
@@ -43,8 +42,8 @@ const SearchBarFilter = () => {
       padding="24px"
     >
       <Flex flexDirection="column" alignItems="center">
-        <img src={fruits} alt="Fruits" width={"200px"} />
-        <H3>Welcome to the local fruit store 👨🏻‍🌾</H3>
+        <H1>👨🏻‍🌾</H1>
+        <H3>Welcome to the local fruit store</H3>
       </Flex>
 
       <input

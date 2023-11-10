@@ -21,6 +21,7 @@ export default {
 
   // Green
   green100: "#73DACA",
+  green200: "#6ECC",
 
   // Red
   red100: "#EB7188",

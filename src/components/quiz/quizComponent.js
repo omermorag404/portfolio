@@ -20,6 +20,10 @@ export const QuizComponent = () => {
       background-color: ${colors.green100};
       color: ${colors.blue400};
     }
+    &:active {
+      background-color: ${colors.green200};
+      color: ${colors.blue400};
+    }
   `;
   const Question = styled.div`
     font-size: ${textSize.md};

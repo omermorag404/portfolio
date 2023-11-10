@@ -4,6 +4,10 @@
   margin: 0;
   font-family: "Source Code Pro";
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   background-color: #191b26;

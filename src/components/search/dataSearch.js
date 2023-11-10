@@ -49,4 +49,29 @@ export const SearchData = [
     name: "Blueberries",
     icon: "🫐",
   },
+  {
+    id: "11",
+    name: "Coconut",
+    icon: "🥥",
+  },
+  {
+    id: "12",
+    name: "Peach",
+    icon: "🍑",
+  },
+  {
+    id: "13",
+    name: "Kiwi",
+    icon: "🥝",
+  },
+  {
+    id: "14",
+    name: "Strawbwerry",
+    icon: "🍓",
+  },
+  {
+    id: "15",
+    name: "Cherry",
+    icon: "🍒",
+  },
 ];

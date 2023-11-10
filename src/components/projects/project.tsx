@@ -23,9 +23,20 @@ const ProjectStyledCard = styled(Flex)`
   }
 `;
 function ProjectCard({ projectData }: any) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
-      <Link to={projectData.link} style={{ textDecoration: "none" }}>
+      <Link
+        to={projectData.link}
+        style={{ textDecoration: "none" }}
+        onClick={scrollToTop}
+      >
         <ProjectStyledCard gap={spacing.lg} style={{ borderRadius: 16 }}>
           <H2>{projectData.icon}</H2>
           <Flex
