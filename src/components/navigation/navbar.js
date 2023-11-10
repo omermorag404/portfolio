@@ -63,7 +63,7 @@ function NavBar() {
             }}
           >
             {" "}
-            <H4 style={{ color: colors.purple300 }}>
+            <H4 style={{ color: colors.purple300, textAlign: "left" }}>
               🚀 My React.js Portfolio
             </H4>
           </NavLink>
