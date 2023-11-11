@@ -14,7 +14,7 @@ import { LoginDetails } from "../components/details/details";
 const checkUser = (values) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (values.username === "omerm" && values.password === "helloworld")
+      if (values.username === "user" && values.password === "password")
         resolve(true);
       reject(false);
     }, 500);

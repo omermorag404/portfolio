@@ -110,16 +110,16 @@ export const QuizComponent = () => {
             {score === questions.length ? (
               <Flex flexDirection="column" alignItems="center">
                 <H1>🏆</H1>
-                <P>You naild it! </P>
+                <P>Well done!</P>
               </Flex>
             ) : (
               <Flex flexDirection="column" alignItems="center">
                 <H1>👏🏻</H1>
-                <P>You naild it! </P>
+                <P>You almost got it</P>
               </Flex>
             )}
             <H3 color={colors.orange100}>
-              You scored {score} out of {questions.length}
+              You scored {score} / {questions.length}
             </H3>
             <CTA
               variant="primary"
